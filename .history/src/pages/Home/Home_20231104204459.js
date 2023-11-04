@@ -33,8 +33,7 @@ export const Home = () => {
           <div className="flexy flexyM">
             <h6>Sort by:</h6>
             <select>
-              <option>Newest</option>
-              <option>Oldest</option>
+              <option>Date</option>
               <option>Subject</option>
               <option>Year</option>
             </select>

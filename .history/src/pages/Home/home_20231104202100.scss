@@ -1,6 +1,5 @@
 .home-div {
   padding-top: 60px;
-  padding-bottom: 60px;
   .unit {
     h3 {
       flex-grow: 1;
@@ -39,22 +38,15 @@
   }
   .sort {
     margin-top: 100px;
-    margin-bottom: 20px;
     h3 {
       flex-grow: 1;
     }
-    h6 {
-      margin-top: 10px;
-      margin-right: 5px;
-    }
     select {
-      border: solid 1px #cecbcb;
+      border: solid 1px rgb(192, 190, 190);
       border-radius: 35px;
       width: 100px;
       background: #fff;
       font-family: rebondG-Medium;
-      font-size: 14px;
-      color: #191919;
     }
   }
 }

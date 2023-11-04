@@ -1,12 +1,6 @@
-import React, { useState } from "react";
-import { Exams } from "../../components/Exams/Exams";
-import { exams } from "../../TestData";
+import React from "react";
 import "./home.scss";
 export const Home = () => {
-  const [state, setState] = useState({
-    query: "",
-    list: exams,
-  });
   return (
     <>
       <div className="home-div col-md-10 offset-md-1">
@@ -28,22 +22,14 @@ export const Home = () => {
             <input placeholder="2023" />
           </div>
         </div>
-        <div className="flexy sort">
+        <div className="flexy">
           <h3>Explore Past Questions</h3>
           <div className="flexy flexyM">
             <h6>Sort by:</h6>
             <select>
-              <option>Newest</option>
-              <option>Oldest</option>
-              <option>Subject</option>
-              <option>Year</option>
+              <option>1</option>
             </select>
           </div>
-        </div>
-        <div className="row ">
-          {state.list.map((data, index) => (
-            <Exams data={data} />
-          ))}
         </div>
       </div>
     </>
