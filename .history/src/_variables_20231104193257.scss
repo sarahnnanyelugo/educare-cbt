@@ -17,12 +17,12 @@ $purple: #5044b2;
 @mixin main-btn {
   background: #2f67d8 !important;
   color: #fff;
-  border-radius: 100px;
-  // padding: 8px 20px;
-  width: 91px;
-  height: 36px;
+  border-radius: 32px;
+  padding: 8px 20px;
   font-size: 14px;
+  // font-weight: bold;
   border: solid 1px #414244;
+  border: solid 2px rgb(230, 225, 225);
   font-family: rebondG-Semi-Bold;
 
   &:hover {

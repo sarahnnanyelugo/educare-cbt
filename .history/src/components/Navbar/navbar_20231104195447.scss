@@ -1,0 +1,25 @@
+.nav-container {
+  padding: 5px 60px;
+  box-shadow: 0px 3px 6px #00000029;
+  background: #fff;
+  .logo-holder {
+    flex-grow: 1;
+  }
+  .navs {
+    flex-grow: 1;
+    .navlinks {
+      button {
+        margin: 0 10px;
+        //   width: 74px;
+        //   height: 36px;
+        color: #000;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 100px;
+        font-family: rebondG-Medium;
+        background: #c7d8fa;
+      }
+    }
+  }
+}

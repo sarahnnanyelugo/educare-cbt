@@ -14,19 +14,19 @@ $purple: #5044b2;
   //   transition: 0.5s ease;
   // }
 }
-@mixin main-btn {
-  background: #2f67d8 !important;
-  color: #fff;
-  border-radius: 100px;
-  // padding: 8px 20px;
-  width: 91px;
-  height: 36px;
+@mixin login-or-signup-button {
+  background: #fff !important;
+  color: #414244;
+  border-radius: 32px;
+  padding: 8px 20px;
   font-size: 14px;
-  border: solid 1px #414244;
+  // font-weight: bold;
+  border: none;
+  border: solid 2px rgb(230, 225, 225);
   font-family: rebondG-Semi-Bold;
 
   &:hover {
-    background: #1e4ba7 !important;
+    background: rgb(231, 231, 231) !important;
     transition: 0.5s ease;
   }
 }
