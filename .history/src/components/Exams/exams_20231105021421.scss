@@ -1,0 +1,32 @@
+@import "../../variables";
+@import "../../shared-styles";
+
+.questions-div {
+  border: 1px solid #e7e7e7;
+  border-radius: 11px;
+  box-shadow: 0px 3px 6px #0000000d;
+  height: 89px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  h6 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  button {
+    @include main-btn;
+  }
+  tbody {
+    background: red !important;
+  }
+  tr td {
+    background: red !important;
+    border: none;
+    height: 50px;
+    text-align: left;
+    small {
+      font-size: 14px;
+    }
+  }
+}
