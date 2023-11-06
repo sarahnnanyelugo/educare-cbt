@@ -27,9 +27,12 @@
     border: none;
     padding: 0 !important;
     text-align: left;
-    // overflow: scroll;
+    overflow: scroll;
     small {
       font-size: 14px;
     }
+  }
+  table {
+    overflow: scroll;
   }
 }

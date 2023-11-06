@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<AuthenticationPage />} />{" "}
         <Route path="home" element={<Home />} />{" "}

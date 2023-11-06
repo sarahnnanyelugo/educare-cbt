@@ -29,7 +29,7 @@ export const Navbar = () => {
             break;
 
           default:
-            setShowNav(false);
+            setShowNav(true);
             break;
         }
         localStorage.setItem("showNav", showNav);

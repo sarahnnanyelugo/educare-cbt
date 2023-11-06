@@ -6,7 +6,7 @@ import Question from "../../assets/images/question.svg";
 import Tick from "../../assets/images/tick.svg";
 import Play from "../../assets/images/play.svg";
 import { Link } from "react-router-dom";
-export const TestModal = () => {
+export const SubmitModal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -16,9 +16,7 @@ export const TestModal = () => {
     <>
       <div className="test-modal-div">
         {" "}
-        <button onClick={handleShow} style={{ border: "none" }}>
-          Practice
-        </button>
+        <button onClick={handleShow}>Practice</button>
         <Modal show={show} onHide={handleClose} centered>
           <Modal.Header>
             <div className="flexy col-md-12 flexyM">

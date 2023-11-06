@@ -24,12 +24,12 @@ export const Navbar = () => {
           case "/question":
             setShowNav(false);
             break;
-          case "/summary-page":
+          case "/question":
             setShowNav(false);
             break;
 
           default:
-            setShowNav(false);
+            setShowNav(true);
             break;
         }
         localStorage.setItem("showNav", showNav);

@@ -16,9 +16,7 @@ export const TestModal = () => {
     <>
       <div className="test-modal-div">
         {" "}
-        <button onClick={handleShow} style={{ border: "none" }}>
-          Practice
-        </button>
+        <button onClick={handleShow}>Practice</button>
         <Modal show={show} onHide={handleClose} centered>
           <Modal.Header>
             <div className="flexy col-md-12 flexyM">

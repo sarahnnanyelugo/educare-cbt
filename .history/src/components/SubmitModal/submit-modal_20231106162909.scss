@@ -1,0 +1,53 @@
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.9 !important;
+}
+.submit-modal-div {
+  p {
+    font-size: 14px !important;
+  }
+}
+.not-done-btn {
+  border: 1px solid #414244;
+  border-radius: 100px;
+  width: 140px;
+  height: 36px;
+  color: #fff;
+  background: #d52143;
+  font-size: 14px;
+}
+.modal-tops {
+  flex-grow: 1 !important;
+}
+.test-body {
+  padding: 10px;
+}
+.modal-footer {
+  display: block !important;
+}
+.done-btn {
+  background: #d52143;
+  border: solid 1px #414244;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 14px !important;
+  width: 81px;
+  height: 36px;
+  font-family: rebondG-Semi-Bold;
+}
+.start-btn {
+  float: right;
+  button {
+    background: #2f67d8;
+    border: solid 1px #414244;
+    width: 124px;
+    height: 38px;
+    border-radius: 100px;
+    font-family: rebondG-Semi-Bold;
+    font-size: 14px !important;
+    color: #fff;
+  }
+  h6 {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+}

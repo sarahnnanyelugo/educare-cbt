@@ -6,7 +6,7 @@ import Question from "../../assets/images/question.svg";
 import Tick from "../../assets/images/tick.svg";
 import Play from "../../assets/images/play.svg";
 import { Link } from "react-router-dom";
-export const TestModal = () => {
+export const SubmitModal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -16,35 +16,20 @@ export const TestModal = () => {
     <>
       <div className="test-modal-div">
         {" "}
-        <button onClick={handleShow} style={{ border: "none" }}>
-          Practice
-        </button>
+        <button onClick={handleShow}>Practice</button>
         <Modal show={show} onHide={handleClose} centered>
-          <Modal.Header>
-            <div className="flexy col-md-12 flexyM">
-              <div className="modal-tops">
-                {" "}
-                <h5>2010 JAMB Chemistry</h5>
-                <p style={{ fontSize: "14px" }}>2020 GEOGRAPHY WAEC PRACTICE</p>
-              </div>
-              <button className="attempts-btn ">
-                0<br />
-                Attempts
-              </button>
-            </div>
-          </Modal.Header>
           <Modal.Body>
             <div className="test-body flexy">
               {" "}
-              <div>
+              <div className="flexy">
                 {" "}
-                <div className="flexy" style={{ marginBottom: "7px" }}>
-                  <img src={Time} alt="logo" width="22px" height="22px" />
-                  <small>30 mins</small>
+                <div>
+                  <h6>Attempted Questions</h6>
+                  <p>35</p>
                 </div>
-                <div className="flexy">
-                  <img src={Question} alt="logo" width="22px" height="22px" />
-                  <small>50 questions</small>
+                <div className="">
+                  <h6>Unattempted Questions</h6>
+                  <p>15</p>
                 </div>
               </div>
               <div className="flexy offset-md-2">

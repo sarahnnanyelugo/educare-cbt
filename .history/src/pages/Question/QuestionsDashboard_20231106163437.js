@@ -124,13 +124,13 @@ export const QuestionsDashboard = () => {
                   Previous
                 </button>
                 {lastQuestion ? (
-                  <div className="next-btn offset-md-8">
+                  <div className="next-btn offset-md-9">
                     {" "}
                     <SubmitModal />
                   </div>
                 ) : (
                   <button
-                    className="next-btn  offset-md-9"
+                    className="next-btn  offset-md-7"
                     onClick={() =>
                       questionNumber < state.list.length - 1
                         ? setQuestionNumber(questionNumber + 1)
