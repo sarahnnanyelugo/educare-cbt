@@ -57,3 +57,24 @@
 .next-btn {
   @include main-btn;
 }
+.review-btn {
+  width: 127px;
+  height: 36px;
+  background: #2f67d8;
+  color: #fff;
+  border: 1px solid #414244;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: rebondG-Semi-Bold;
+  margin-left: 5px;
+}
+.reset-btn {
+  width: 130px;
+  height: 36px;
+  background: #fff;
+  color: #2f67d8;
+  border: 1px solid #2f67d8;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: rebondG-Semi-Bold;
+}

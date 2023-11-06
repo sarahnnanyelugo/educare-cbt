@@ -7,6 +7,22 @@ import { Questions } from "../../components/Questions/Questions";
 import { QuestionNum } from "../../components/QuestionNum/QuestionNum";
 
 export const QuestionsDashboard = () => {
+  const [countdown, setCountdown] = useState(30); // Initial countdown time in seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (countdown > 0) {
+        setCountdown((prevCountdown) => prevCountdown - 1);
+      }
+    }, 1000);
+
+    // Clean up the timer when the component unmounts
+    return () => clearInterval(timer);
+  }, []);
+  const startCountdown = () => {
+    // You can add your custom logic here to handle the button click action
+    // For now, we'll just log a message when the button is clicked
+    console.log("Button clicked!");
+  };
   const [state, setState] = useState({
     query: "",
     list: questions,
@@ -74,7 +90,10 @@ export const QuestionsDashboard = () => {
             </div>
           </div>
           <div className="timer offset-md-4 mt4">
-            <button>00 : 29 : 59</button>
+            <button disabled={countdown > 0}>
+              {" "}
+              {countdown > 0 ? `Wait (${countdown}s)` : "Countdown Started"}
+            </button>
           </div>
         </div>
         <div className="col-md-8 offset-md-2 flexy">
@@ -128,7 +147,11 @@ export const QuestionsDashboard = () => {
               ))}
             </div>
             {lastQuestion ? (
-              <button className="next-btn offset-md-9">Submit</button>
+              <div className="flexy offset-md-4" style={{ marginTop: "120px" }}>
+                {" "}
+                <button className="reset-btn ">Reset question</button>{" "}
+                <button className="review-btn ">Reset answer</button>
+              </div>
             ) : (
               ""
             )}
