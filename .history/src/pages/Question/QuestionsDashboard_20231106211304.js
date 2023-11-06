@@ -160,7 +160,7 @@ export const QuestionsDashboard = () => {
                 <button className="reset-btn ">Reset question</button>{" "}
                 <Link to={"/review-page"}>
                   {" "}
-                  <button className="review-btn ">Review answer</button>
+                  <button className="review-btn ">Reviewt answer</button>
                 </Link>
               </div>
             ) : (

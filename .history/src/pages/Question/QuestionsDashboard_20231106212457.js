@@ -155,7 +155,7 @@ export const QuestionsDashboard = () => {
               ))}
             </div>
             {lastQuestion ? (
-              <div className="flexy offset-md-2" style={{ marginTop: "120px" }}>
+              <div className="flexy offset-md-3" style={{ marginTop: "120px" }}>
                 {" "}
                 <button className="reset-btn ">Reset question</button>{" "}
                 <Link to={"/review-page"}>

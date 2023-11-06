@@ -158,10 +158,7 @@ export const QuestionsDashboard = () => {
               <div className="flexy offset-md-2" style={{ marginTop: "120px" }}>
                 {" "}
                 <button className="reset-btn ">Reset question</button>{" "}
-                <Link to={"/review-page"}>
-                  {" "}
-                  <button className="review-btn ">Review answer</button>
-                </Link>
+                <button className="review-btn ">Reviewt answer</button>
               </div>
             ) : (
               ""

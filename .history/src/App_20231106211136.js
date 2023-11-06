@@ -11,7 +11,6 @@ import { Wallet } from "./pages/Wallet/Wallet";
 import { QuestionsDashboard } from "./pages/Question/QuestionsDashboard";
 import { SummaryPage } from "./pages/SummaryPage/SummaryPage";
 import { ReviewPage } from "./pages/ReviewPage/ReviewPage";
-import { TestAnalysis } from "./pages/TestAnalysis/TestAnalysis";
 function App() {
   return (
     <>
@@ -23,7 +22,6 @@ function App() {
         <Route path="test-instructions" element={<TestInstructions />} />{" "}
         <Route path="questions-dashboard" element={<QuestionsDashboard />} />
         <Route path="wallet" element={<Wallet />} />{" "}
-        <Route path="test-analysis" element={<TestAnalysis />} />{" "}
         <Route path="summary-page" element={<SummaryPage />} />{" "}
         <Route path="review-page" element={<ReviewPage />} />{" "}
       </Routes>
