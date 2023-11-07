@@ -1,6 +1,5 @@
 import ReactApexChart from "react-apexcharts";
 import React from "react";
-import { AllInbox } from "@material-ui/icons";
 class TimeChart extends React.Component {
   constructor(props) {
     super(props);
@@ -33,6 +32,7 @@ class TimeChart extends React.Component {
         },
         plotOptions: {
           bar: {
+            // borderRadius: 10,
             columnWidth: "4px",
             distributed: true,
             dataLabels: {
@@ -40,7 +40,7 @@ class TimeChart extends React.Component {
             },
           },
         },
-        legend: { show: false },
+        legend: { show: true },
         dataLabels: {
           enabled: true,
           formatter: function (val) {
@@ -64,10 +64,7 @@ class TimeChart extends React.Component {
         },
         xaxis: {
           labels: {
-            style: {
-              fontSize: "8px",
-              fontWeight: "bold",
-            },
+            rotate: -45,
           },
           categories: [
             "Q1",

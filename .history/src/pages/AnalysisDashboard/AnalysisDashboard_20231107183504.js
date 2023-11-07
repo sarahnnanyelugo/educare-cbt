@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./analysis-dashboard.scss";
 import QuestionChart from "./QuestionChart.js/QuestionChart";
-import SubjectChart from "./SubjectChart/SubjectChart";
 import TimeChart from "./TimeChart/TimeChart";
 export const AnalysisDashboard = () => {
   const [activeIndex2, setActiveIndex2] = useState(1);
@@ -110,7 +109,7 @@ export const AnalysisDashboard = () => {
               <div className=" chart-div2">
                 <h6>Time on Question Chart</h6>
                 <hr />
-                <SubjectChart />
+                <TimeChart />
               </div>
             </div>
             <div className={`panel ${checkActive(2, "active2")}`}>2</div>

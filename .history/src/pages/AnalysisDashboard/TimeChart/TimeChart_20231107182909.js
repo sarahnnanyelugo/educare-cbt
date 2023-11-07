@@ -64,6 +64,7 @@ class TimeChart extends React.Component {
         },
         xaxis: {
           labels: {
+            rotate: -45,
             style: {
               fontSize: "8px",
               fontWeight: "bold",

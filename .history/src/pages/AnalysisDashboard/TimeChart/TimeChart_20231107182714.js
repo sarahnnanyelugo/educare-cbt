@@ -33,6 +33,9 @@ class TimeChart extends React.Component {
         },
         plotOptions: {
           bar: {
+            borderRadiusWhenStacked: " all",
+            borderRadius: 10,
+            borderRadiusApplication: "around",
             columnWidth: "4px",
             distributed: true,
             dataLabels: {
@@ -64,10 +67,8 @@ class TimeChart extends React.Component {
         },
         xaxis: {
           labels: {
-            style: {
-              fontSize: "8px",
-              fontWeight: "bold",
-            },
+            rotate: -45,
+            color: "red",
           },
           categories: [
             "Q1",

@@ -67,6 +67,7 @@ class TimeChart extends React.Component {
             style: {
               fontSize: "8px",
               fontWeight: "bold",
+              transformRotate: "120deg",
             },
           },
           categories: [
