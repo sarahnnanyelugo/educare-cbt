@@ -28,7 +28,7 @@ export const TestAnalysis = () => {
               <th style={{ color: "#fff" }} className="col-md-1">
                 logooo
               </th>
-              <th className="col-md-2">Name</th>
+              <th className="col-md-">Name</th>
               <th className="col-md-2">Subjects</th>
               <th>Date Attempted</th>
               <th>Total Score</th>

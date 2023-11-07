@@ -23,7 +23,7 @@ export const TestAnalysis = () => {
           </div>
         </div>
         <div className="row analysis-table">
-          <Table>
+          {/* <Table>
             <tr>
               <th style={{ color: "#fff" }} className="col-md-1">
                 logooo
@@ -35,7 +35,7 @@ export const TestAnalysis = () => {
               <th>Time Used (mins)</th>
               <th>Action</th>
             </tr>
-          </Table>
+          </Table> */}
           {state.list.map((data, index) => (
             <Analysis data={data} />
           ))}

@@ -25,7 +25,7 @@ export const TestAnalysis = () => {
         <div className="row analysis-table">
           <Table>
             <tr>
-              <th style={{ color: "#fff" }} className="col-md-1">
+              <th style={{ color: "#fff" }} className="col-md-2">
                 logooo
               </th>
               <th className="col-md-2">Name</th>

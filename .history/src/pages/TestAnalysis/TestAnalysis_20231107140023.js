@@ -23,19 +23,21 @@ export const TestAnalysis = () => {
           </div>
         </div>
         <div className="row analysis-table">
-          <Table>
-            <tr>
-              <th style={{ color: "#fff" }} className="col-md-1">
-                logooo
-              </th>
-              <th className="col-md-2">Name</th>
-              <th className="col-md-2">Subjects</th>
-              <th>Date Attempted</th>
-              <th>Total Score</th>
-              <th>Time Used (mins)</th>
-              <th>Action</th>
-            </tr>
-          </Table>
+          <div className="analysis-div  col-12">
+            {" "}
+            <Table>
+              <tr>
+                <tr></tr>
+                <th>Name</th>
+                <th>Subjects</th>
+                <th>Date Attempted</th>
+                <th>Total Score</th>
+                <th>Time Used (mins)</th>
+                <th>Action</th>
+              </tr>
+            </Table>
+          </div>
+
           {state.list.map((data, index) => (
             <Analysis data={data} />
           ))}

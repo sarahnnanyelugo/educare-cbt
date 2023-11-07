@@ -4,7 +4,6 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import { analysis } from "../../TestData";
 import { Analysis } from "./Analysis/Analysis";
 import "./test-analysis.scss";
-import Table from "react-bootstrap/Table";
 
 export const TestAnalysis = () => {
   const [state, setState] = useState({
@@ -22,20 +21,7 @@ export const TestAnalysis = () => {
             <input type="search" placeholder="search" />
           </div>
         </div>
-        <div className="row analysis-table">
-          <Table>
-            <tr>
-              <th style={{ color: "#fff" }} className="col-md-1">
-                logooo
-              </th>
-              <th className="col-md-2">Name</th>
-              <th className="col-md-2">Subjects</th>
-              <th>Date Attempted</th>
-              <th>Total Score</th>
-              <th>Time Used (mins)</th>
-              <th>Action</th>
-            </tr>
-          </Table>
+        <div className="row ">
           {state.list.map((data, index) => (
             <Analysis data={data} />
           ))}

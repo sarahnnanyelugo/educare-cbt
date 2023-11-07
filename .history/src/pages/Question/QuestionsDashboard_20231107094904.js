@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./question.scss";
 import Alert from "../../assets/images/alert.svg";
 import { Link } from "react-router-dom";
-import { questions } from "../../TestData";
+import { num, questions } from "../../TestData";
 import { Questions } from "../../components/Questions/Questions";
 import { QuestionNum } from "../../components/QuestionNum/QuestionNum";
 import { SubmitModal } from "../../components/SubmitModal/SubmitModal";
