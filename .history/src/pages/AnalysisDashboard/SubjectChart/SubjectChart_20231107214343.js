@@ -109,7 +109,7 @@ class SubjectChart extends React.Component {
           labels: {
             show: true,
             formatter: function (val) {
-              return val + "";
+              return val + "%";
             },
           },
         },

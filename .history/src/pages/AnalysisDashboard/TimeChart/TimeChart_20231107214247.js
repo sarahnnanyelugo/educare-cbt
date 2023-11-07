@@ -19,7 +19,7 @@ class TimeChart extends React.Component {
         annotations: {
           points: [
             {
-              seriesIndex: 0,
+              seriesIndex: 10,
               label: {
                 borderColor: "#775DD0",
                 offsetY: 0,

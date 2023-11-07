@@ -45,7 +45,7 @@ export const Analysis = ({ data }) => {
                 {" "}
                 <small>{data.score}</small>
               </td>
-              <td className="col-md-2">
+              <td>
                 {/* <TestModal /> */}
                 <small> {data.duration}</small>
               </td>
