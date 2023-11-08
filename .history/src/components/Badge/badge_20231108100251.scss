@@ -1,0 +1,14 @@
+.badge {
+  border-radius: 100px;
+  padding: 5px 13px !important;
+  font-family: rebondG-Semi-Bold;
+  font-size: 14px;
+}
+
+.badge::before {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: red;
+  content: "";
+}

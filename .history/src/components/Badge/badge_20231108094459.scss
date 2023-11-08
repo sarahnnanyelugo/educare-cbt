@@ -1,0 +1,12 @@
+.badge {
+  border-radius: 100px;
+  padding: 0px 13px;
+}
+
+.badge::before {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background: red;
+  content: "";
+}
