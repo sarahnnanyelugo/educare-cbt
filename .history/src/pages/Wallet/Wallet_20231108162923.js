@@ -14,7 +14,7 @@ export const Wallet = () => {
   const [state, setState] = useState({
     query: "",
     list: transactionsData,
-    list2: activityData,
+    list: activityData,
   });
   return (
     <>
@@ -61,14 +61,7 @@ export const Wallet = () => {
                 ))}
               </div>
             </div>
-            <div className={`panel ${checkActive(2, "active2")}`}>
-              {" "}
-              <div className="row ">
-                {state.list2.map((data, index) => (
-                  <Activity data={data} />
-                ))}
-              </div>
-            </div>
+            <div className={`panel ${checkActive(2, "active2")}`}>2</div>
           </div>
         </div>
       </div>

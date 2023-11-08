@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./wallet.scss";
 import Logo from "../../assets/images/logo.png";
 import { Navbar } from "../../components/Navbar/Navbar";
-import { activityData, transactionsData } from "../../TestData/walletData";
+import { walletData } from "../../TestData/walletData";
 import { Activity } from "./Activity";
 
 export const Wallet = () => {
@@ -13,8 +13,7 @@ export const Wallet = () => {
     activeIndex2 === index ? className : "";
   const [state, setState] = useState({
     query: "",
-    list: transactionsData,
-    list2: activityData,
+    list: walletData,
   });
   return (
     <>
@@ -61,14 +60,7 @@ export const Wallet = () => {
                 ))}
               </div>
             </div>
-            <div className={`panel ${checkActive(2, "active2")}`}>
-              {" "}
-              <div className="row ">
-                {state.list2.map((data, index) => (
-                  <Activity data={data} />
-                ))}
-              </div>
-            </div>
+            <div className={`panel ${checkActive(2, "active2")}`}>2</div>
           </div>
         </div>
       </div>
