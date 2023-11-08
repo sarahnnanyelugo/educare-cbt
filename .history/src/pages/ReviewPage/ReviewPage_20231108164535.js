@@ -70,13 +70,13 @@ export const ReviewPage = () => {
             <button disabled={countdown > 0}> {formatTime(countdown)}</button>
           </div>
         </div>
-        <div className="col-md-8 offset-md-2 review-board">
-          <div className="row ">
-            <Questions
-              data={state.list[questionNumber]}
-              setChecked={setChecked}
-            />
-          </div>
+      </div>
+      <div className="col-md-10 offset-md-1 review-board">
+        <div className="row ">
+          <Questions
+            data={state.list[questionNumber]}
+            setChecked={setChecked}
+          />
         </div>
       </div>
     </>

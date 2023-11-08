@@ -1,24 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Questions } from "../../components/Questions/Questions";
-import { questions } from "../../TestData";
 import "./review.scss";
 export const ReviewPage = () => {
-  const [questionNumber, setQuestionNumber] = useState(6);
   const [countdown, setCountdown] = useState(30 * 60); // 30 minutes in seconds
-  const setChecked = (id, index) => {
-    console.log(id, index);
-    if (id !== null) {
-      const ind = state.list.findIndex((item) => item.id === id);
-      if (ind != -1) {
-        // Update the selected property of the object at index `ind`
-        const updatedList = [...state.list]; // Create a copy of the original array
-        updatedList[ind].selected = index;
 
-        // Update the state with the modified array
-        setState({ list: updatedList });
-      }
-    }
-  };
   useEffect(() => {
     const timer = setInterval(() => {
       if (countdown > 0) {
@@ -40,10 +24,6 @@ export const ReviewPage = () => {
       .toString()
       .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
   };
-  const [state, setState] = useState({
-    query: "",
-    list: questions,
-  });
   return (
     <>
       <div className="test-instructions-div">
@@ -70,15 +50,8 @@ export const ReviewPage = () => {
             <button disabled={countdown > 0}> {formatTime(countdown)}</button>
           </div>
         </div>
-        <div className="col-md-8 offset-md-2 review-board">
-          <div className="row ">
-            <Questions
-              data={state.list[questionNumber]}
-              setChecked={setChecked}
-            />
-          </div>
-        </div>
       </div>
+      <div className="col-md-10 offset-md-1 review-board"></div>
     </>
   );
 };

@@ -3,7 +3,7 @@ import { Questions } from "../../components/Questions/Questions";
 import { questions } from "../../TestData";
 import "./review.scss";
 export const ReviewPage = () => {
-  const [questionNumber, setQuestionNumber] = useState(6);
+  const [questionNumber, setQuestionNumber] = useState(6, 4, 6);
   const [countdown, setCountdown] = useState(30 * 60); // 30 minutes in seconds
   const setChecked = (id, index) => {
     console.log(id, index);
@@ -70,13 +70,13 @@ export const ReviewPage = () => {
             <button disabled={countdown > 0}> {formatTime(countdown)}</button>
           </div>
         </div>
-        <div className="col-md-8 offset-md-2 review-board">
-          <div className="row ">
-            <Questions
-              data={state.list[questionNumber]}
-              setChecked={setChecked}
-            />
-          </div>
+      </div>
+      <div className="col-md-10 offset-md-1 review-board">
+        <div className="row ">
+          <Questions
+            data={state.list[questionNumber]}
+            setChecked={setChecked}
+          />
         </div>
       </div>
     </>
