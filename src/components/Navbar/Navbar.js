@@ -66,9 +66,9 @@ export const Navbar = () => {
         <NavLink activeclassName="active" className="navlinks" to={"/wallet"}>
           <button> Wallet</button>
         </NavLink>{" "}
-        <NavLink activeclassName="active" className="navlinks" to={"/sample"}>
+        {/* <NavLink activeclassName="active" className="navlinks" to={"/sample"}>
           <button> Sample</button>
-        </NavLink>
+        </NavLink> */}
       </div>
       <div>
         {" "}

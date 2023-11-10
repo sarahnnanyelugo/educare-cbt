@@ -25,7 +25,7 @@ export const Home = () => {
             comprehensive practice and detailed solutions to boost your
             performance.
           </p>
-          <Link>
+          <Link to={"/exam-list"}>
             <button>Browse questions</button>
           </Link>
         </div>
@@ -156,7 +156,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="col-md-3 offset-md-3">
-          <Link>
+          <Link to={"/exam-list"}>
             <button>Browse subjects</button>
           </Link>
         </div>
