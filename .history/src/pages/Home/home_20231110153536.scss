@@ -1,0 +1,44 @@
+@import "../../variables";
+@import "../../shared-styles";
+.landing-div {
+  background: url("../../assets/images/brush-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  h1 {
+    font-size: 40px;
+    font-family: rebondG-Bold;
+  }
+  button {
+    @include main-btn;
+  }
+}
+.partners {
+  img {
+    gray-scale: 100%;
+  }
+  .lagoon {
+    width: 222px;
+    height: 45px;
+  }
+  .grange {
+    width: 178px;
+    height: 41px;
+  }
+  .lbs {
+    width: 169px;
+    height: 41px;
+  }
+  .starvile {
+    width: 96px;
+    height: 59px;
+  }
+  .evergreen {
+    width: 110px;
+    height: 53px;
+  }
+  .evergreen {
+    width: 110px;
+    height: 53px;
+  }
+}
