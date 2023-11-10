@@ -21,21 +21,14 @@ import Users from "../../assets/images/users.png";
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import { Sample } from "../Sample/Sample";
-import Example from "../Sample/example";
-import VerticalCarousel from "../Sample/VerticalCarousel";
-import { Testimonials } from "./Testimonials/Testimonials";
 export const Home = () => {
   return (
     <>
       <EducareNavBar />
       <div className="landing-div col-md-12 flexy">
-        <div className="col-md-4 offset-md-1 mt">
-          <h1>
-            Your Exam Journey
-            <br /> Starts Here ⚡︎
-          </h1>
-          <p className="col-md-10">
+        <div className="col-md-3 offset-md-1 mt">
+          <h1>Your Exam Journey Starts Here ⚡︎</h1>
+          <p>
             Achieve exam-ready confidence with our CBT tools, providing
             comprehensive practice and detailed solutions to boost your
             performance.
@@ -205,18 +198,14 @@ export const Home = () => {
         </div>
       </div>
       <div className="testimonial-div flexy">
-        <div className="col-md-3 offset-md-2 heading">
+        <div className="col-md-3 offset-md-1 heading">
           <h4>People say about us</h4>
           <p>
             The only one platform who caters exam practice test for learners
             across the globe.
           </p>
         </div>
-        <div className="col-md-4 offset-md-1">
-          <Testimonials />
-        </div>
       </div>
-
       <div className="col-md-8 offset-md-2 flexy prefooter">
         <div className="col-md-6">
           <h1>

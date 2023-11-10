@@ -12,43 +12,29 @@ import Waec from "../../assets/images/waec.png";
 import Igcse from "../../assets/images/igcse.png";
 import Toefl from "../../assets/images/toefl.png";
 import Neco from "../../assets/images/neco.png";
-import Ielt from "../../assets/images/ielt.png";
-import Olympiad from "../../assets/images/olympiad.png";
+import Ielts from "../../assets/images/waec.png";
+import Olympiad from "../../assets/images/ielts.png";
 import Sat from "../../assets/images/sat.png";
 import Bece from "../../assets/images/bece.png";
-import Users from "../../assets/images/users.png";
 
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import { Sample } from "../Sample/Sample";
-import Example from "../Sample/example";
-import VerticalCarousel from "../Sample/VerticalCarousel";
-import { Testimonials } from "./Testimonials/Testimonials";
 export const Home = () => {
   return (
     <>
       <EducareNavBar />
       <div className="landing-div col-md-12 flexy">
         <div className="col-md-4 offset-md-1 mt">
-          <h1>
-            Your Exam Journey
-            <br /> Starts Here ⚡︎
-          </h1>
-          <p className="col-md-10">
+          <h1>Your Exam Journey Starts Here ⚡︎</h1>
+          <p>
             Achieve exam-ready confidence with our CBT tools, providing
             comprehensive practice and detailed solutions to boost your
             performance.
           </p>
-
           <Link to={"/exam-list"}>
             <button>Browse questions</button>
           </Link>
-          <br />
-          <img src={Users} alt="image" width="136px" className="mt5" />
-          <h6 style={{ fontFamily: "   font-family: rebondG-Bold" }}>
-            Over 5,000 registered students
-          </h6>
         </div>
         <div className="col-md-5 offset-md-1">
           <img src={Img} alt="image" width="100%" />
@@ -72,7 +58,7 @@ export const Home = () => {
           </h3>
           <p>Browse through our top exams questions</p>
         </center>
-        <div className="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+        <div className="row row-cols-2 row-cols-lg-2 g-2 g-lg-3">
           <div className="col">
             <div className="exam-container flexy flexyM">
               {" "}
@@ -90,63 +76,15 @@ export const Home = () => {
           <div className="col">
             <div className="exam-container flexy flexyM">
               {" "}
-              <img src={Igcse} alt="logo" className="" width="38px" />
+              <img src={Jamb} alt="logo" className="" width="44px" />
               <h6>IGCSE Exams</h6>
             </div>
           </div>{" "}
           <div className="col">
             <div className="exam-container flexy flexyM">
               {" "}
-              <img
-                src={Toefl}
-                alt="logo"
-                className="mt1"
-                width="44px"
-                height="9px"
-              />
-              <h6>TOEFL Exams</h6>
-            </div>
-          </div>{" "}
-          <div className="col">
-            <div className="exam-container flexy flexyM">
-              {" "}
-              <img src={Neco} alt="logo" className="" width="44px" />
+              <img src={Jamb} alt="logo" className="" width="44px" />
               <h6>NECO Exams</h6>
-            </div>
-          </div>
-          <div className="col">
-            <div className="exam-container flexy flexyM">
-              {" "}
-              <img src={Ielt} alt="logo" className="" width="70px" />
-              <h6>IELT Exams</h6>
-            </div>
-          </div>{" "}
-          <div className="col">
-            <div className="exam-container flexy flexyM">
-              {" "}
-              <img src={Olympiad} alt="logo" className="" width="38px" />
-              <h6>OLYMPIAD Exams</h6>
-            </div>
-          </div>
-          <div className="col">
-            <div className="exam-container flexy flexyM">
-              {" "}
-              <img src={Sat} alt="logo" className="" width="70px" />
-              <h6>SAT Exams</h6>
-            </div>
-          </div>
-          <div className="col">
-            <div className="exam-container flexy flexyM">
-              {" "}
-              <img src={Bece} alt="logo" className="" width="41px" />
-              <h6>BECE Exams</h6>
-            </div>
-          </div>
-          <div className="col">
-            <div className="exam-container flexy flexyM">
-              {" "}
-              <img src={Bece} alt="logo" className="" width="44px" />
-              <h6>Checkpoint Exams</h6>
             </div>
           </div>
         </div>
@@ -205,18 +143,14 @@ export const Home = () => {
         </div>
       </div>
       <div className="testimonial-div flexy">
-        <div className="col-md-3 offset-md-2 heading">
+        <div className="col-md-3 offset-md-1 heading">
           <h4>People say about us</h4>
           <p>
             The only one platform who caters exam practice test for learners
             across the globe.
           </p>
         </div>
-        <div className="col-md-4 offset-md-1">
-          <Testimonials />
-        </div>
       </div>
-
       <div className="col-md-8 offset-md-2 flexy prefooter">
         <div className="col-md-6">
           <h1>

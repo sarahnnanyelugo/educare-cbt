@@ -22,9 +22,6 @@ import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import { Sample } from "../Sample/Sample";
-import Example from "../Sample/example";
-import VerticalCarousel from "../Sample/VerticalCarousel";
-import { Testimonials } from "./Testimonials/Testimonials";
 export const Home = () => {
   return (
     <>
@@ -213,10 +210,9 @@ export const Home = () => {
           </p>
         </div>
         <div className="col-md-4 offset-md-1">
-          <Testimonials />
+          <Sample />
         </div>
       </div>
-
       <div className="col-md-8 offset-md-2 flexy prefooter">
         <div className="col-md-6">
           <h1>

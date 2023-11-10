@@ -46,7 +46,15 @@
     margin-top: 20px;
   }
 }
-
+.divss {
+  height: 80px;
+  background: #000;
+  color: #fff;
+  font-size: 20px !important;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
 .your-div {
   opacity: 0;
   transform: translateY(100%);
