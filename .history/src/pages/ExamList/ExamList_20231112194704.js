@@ -22,7 +22,7 @@ export const ExamList = ({ componentToShow }) => {
       <div>
         {location.pathname === "/home" ? <Navbar /> : <EducareNavBar />}
       </div>
-      <div className="home-div col-md-10 offset-md-1 mt5">
+      <div className="home-div col-md-10 offset-md-1 mt">
         <div className="flexy flexyM unit">
           <h3>Search Questions</h3>
           <button>Units balance: 50,000</button>

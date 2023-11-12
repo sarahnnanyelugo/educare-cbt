@@ -5,7 +5,6 @@ import "./exam-list.scss";
 import Table from "react-bootstrap/Table";
 import { Navbar } from "../../components/Navbar/Navbar";
 import EducareNavBar from "../../components/EducareNavBar/EducareNavBar";
-import { useLocation } from "react-router-dom";
 
 export const ExamList = ({ componentToShow }) => {
   const [state, setState] = useState({
@@ -16,13 +15,11 @@ export const ExamList = ({ componentToShow }) => {
 
   return (
     <>
-      {/* <div>
-        {componentToShow === "EducareNavBar" ? <EducareNavBar /> : <Navbar />}
-      </div> */}
       <div>
-        {location.pathname === "/home" ? <Navbar /> : <EducareNavBar />}
+        {componentToShow === "EducareNavBar" ? <EducareNavBar /> : <Navbar />}
       </div>
-      <div className="home-div col-md-10 offset-md-1 mt5">
+
+      <div className="home-div col-md-10 offset-md-1">
         <div className="flexy flexyM unit">
           <h3>Search Questions</h3>
           <button>Units balance: 50,000</button>
