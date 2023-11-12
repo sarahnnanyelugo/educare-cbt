@@ -17,7 +17,7 @@ const NavigationButtons = styled.div`
 
   height: 60px;
   margin: 0 auto;
-  width: 100%;
+  width: 20%;
   margin-top: 1rem;
   justify-content: space-between;
   z-index: 1000;
@@ -140,7 +140,7 @@ class VerticalCarousel extends React.Component {
       );
     }
     return (
-      <React.Fragment>
+      <div className="col-md-12">
         <Wrapper>
           {this.getPresentableSlides().map((slide, presentableIndex) => (
             <Slide
@@ -154,7 +154,7 @@ class VerticalCarousel extends React.Component {
           ))}
         </Wrapper>
         {navigationButtons}
-      </React.Fragment>
+      </div>
     );
   }
 }

@@ -17,7 +17,7 @@ const NavigationButtons = styled.div`
 
   height: 60px;
   margin: 0 auto;
-  width: 100%;
+  width: 20%;
   margin-top: 1rem;
   justify-content: space-between;
   z-index: 1000;
@@ -45,16 +45,19 @@ class VerticalCarousel extends React.Component {
     };
   }
   setSlide = (slideNo) => {
-    this.moveSlide(1);
+    console.log(slideNo);
+    this.moveSlide(slideNo);
+    if (slideNo < 6) slideNo = slideNo + 1;
+    else slideNo = 0;
     setTimeout(() => {
       this.setSlide(slideNo);
-    }, 5000);
+    }, 1000);
   };
 
   componentDidMount = () => {
     setTimeout(() => {
       // Use an arrow function here
-      this.setSlide(0);
+      this.setSlide(4);
     }, 200);
 
     document.addEventListener("keydown", (event) => {

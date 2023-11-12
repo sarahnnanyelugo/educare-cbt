@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import VerticalCarousel from "./VerticalCarousel";
 import uuidv4 from "uuid";
 import { config } from "react-spring";
-import User1 from "../../assets/images/t1.png";
+import User1 from "../../../assets/images/t1.png";
 import User2 from "../../assets/images/t2.png";
 import User3 from "../../assets/images/t3.png";
 let slidesData = [

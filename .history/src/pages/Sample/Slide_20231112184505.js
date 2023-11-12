@@ -15,7 +15,7 @@ const SlideContainer = styled.div`
 
 const SlideCard = styled.div`
   position: relative;
-  padding: 30px 40px;
+  padding: 40px;
   width: 520px;
   height: 200px;
   background: white;

@@ -213,10 +213,11 @@ export const Home = () => {
           </p>
         </div>
         <div className="col-md-4 offset-md-1">
+          {/* <Testimonials /> */}
           <Example />
         </div>
       </div>
-
+      <Link to={"/sample"}>Check</Link>
       <div className="col-md-8 offset-md-2 flexy prefooter">
         <div className="col-md-6">
           <h1>

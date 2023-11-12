@@ -15,11 +15,12 @@ const SlideContainer = styled.div`
 
 const SlideCard = styled.div`
   position: relative;
-  padding: 30px 40px;
+
   width: 520px;
   height: 200px;
   background: white;
   font-size: 35px;
+  display: flex;
   align-items: center;
   justify-content: center;
   transform-origin: 50% 50%;
@@ -31,8 +32,6 @@ const SlideCard = styled.div`
 
 function Slide({
   content,
-  photo,
-  testifier,
   offsetRadius,
   index,
   animationConfig,
@@ -95,14 +94,11 @@ function Slide({
           }}
         >
           <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
-            <center>
-              {" "}
-              <p>{content}</p>
-            </center>
+            <p>{content}</p>
             <center>
               <h6>
-                <img src={photo} alt="user" width="44px" />
-                {testifier}
+                <img src={User2} alt="user" width="44px" />
+                Adeola Adekola
               </h6>
             </center>
           </SlideCard>

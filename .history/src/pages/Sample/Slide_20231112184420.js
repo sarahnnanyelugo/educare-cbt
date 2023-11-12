@@ -15,11 +15,12 @@ const SlideContainer = styled.div`
 
 const SlideCard = styled.div`
   position: relative;
-  padding: 30px 40px;
+
   width: 520px;
   height: 200px;
   background: white;
   font-size: 35px;
+  display: flex;
   align-items: center;
   justify-content: center;
   transform-origin: 50% 50%;

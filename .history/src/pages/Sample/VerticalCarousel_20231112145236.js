@@ -17,7 +17,7 @@ const NavigationButtons = styled.div`
 
   height: 60px;
   margin: 0 auto;
-  width: 100%;
+  width: 20%;
   margin-top: 1rem;
   justify-content: space-between;
   z-index: 1000;
@@ -35,28 +35,14 @@ function mod(a, b) {
 }
 
 class VerticalCarousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0,
-      goToSlide: null,
-      prevPropsGoToSlide: 0,
-      newSlide: false,
-    };
-  }
-  setSlide = (slideNo) => {
-    this.moveSlide(1);
-    setTimeout(() => {
-      this.setSlide(slideNo);
-    }, 5000);
+  state = {
+    index: 0,
+    goToSlide: null,
+    prevPropsGoToSlide: 0,
+    newSlide: false,
   };
 
   componentDidMount = () => {
-    setTimeout(() => {
-      // Use an arrow function here
-      this.setSlide(0);
-    }, 200);
-
     document.addEventListener("keydown", (event) => {
       if (event.isComposing || event.keyCode === 229) {
         return;
@@ -68,6 +54,10 @@ class VerticalCarousel extends React.Component {
         this.moveSlide(1);
       }
     });
+    setTimeout(function () {
+      console.log(this);
+      // $this.moveSlide(1);
+    }, 500);
   };
 
   static propTypes = {

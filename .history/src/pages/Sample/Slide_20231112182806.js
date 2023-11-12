@@ -2,6 +2,9 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Spring, animated } from "react-spring/renderprops";
 import { withGesture } from "react-with-gesture";
+import User1 from "../../../assets/images/t1.png";
+import User2 from "../../../assets/images/t2.png";
+import User3 from "../../../assets/images/t3.png";
 
 const SlideContainer = styled.div`
   position: absolute;
@@ -15,11 +18,12 @@ const SlideContainer = styled.div`
 
 const SlideCard = styled.div`
   position: relative;
-  padding: 30px 40px;
+
   width: 520px;
   height: 200px;
   background: white;
   font-size: 35px;
+  display: flex;
   align-items: center;
   justify-content: center;
   transform-origin: 50% 50%;
@@ -31,8 +35,6 @@ const SlideCard = styled.div`
 
 function Slide({
   content,
-  photo,
-  testifier,
   offsetRadius,
   index,
   animationConfig,
@@ -95,13 +97,10 @@ function Slide({
           }}
         >
           <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
-            <center>
-              {" "}
-              <p>{content}</p>
-            </center>
+            <p>{content}</p>
             <center>
               <h6>
-                <img src={photo} alt="user" width="44px" />
+                <img src={User2} alt="user" width="44px" />
                 {testifier}
               </h6>
             </center>

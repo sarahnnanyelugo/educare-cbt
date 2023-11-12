@@ -29,38 +29,23 @@ let slidesData = [
   },
   {
     key: 4,
-    content:
-      "As a parent, I'm always looking for ways to support my child's education. This CBT app for exam preparation is a gem. It helped my child build confidence, master the material, and excel in their JAMB and WAEC exams. I highly recommend it to all parents.",
-    photo: User1,
-    testifier: "Sarah Nnanyelugo",
+    content: "4",
   },
   {
     key: 5,
-    content:
-      "I can't thank the creators of this CBT application enough! It's been a game-changer for my child's exam preparation. The interactive practice tests and detailed performance analytics have boosted my child's confidence and results. Highly recommended for all parents!",
-    photo: User2,
-    testifier: "Mrs Uju Ubeh",
+    content: "5",
   },
   {
     key: 6,
-    content:
-      "My child's success in the JAMB and WAEC exams was largely thanks to this fantastic CBT application. It provided a structured and efficient way for my child to practice and refine their knowledge. As a parent, I'm thrilled with the results!",
-    photo: User3,
-    testifier: "PatrickMary Igwe",
+    content: "6",
   },
   {
     key: 7,
-    content:
-      "The CBT app designed for exam preparation is a godsend for both my child and me. It's easy to use, and the vast question bank covers everything they need. Plus, the progress tracking feature allowed me to monitor my child's improvement closely.",
-    photo: User1,
-    testifier: "John Allwell",
+    content: "7",
   },
   {
     key: 8,
-    content:
-      "I was worried about my child's performance in the NECO exam, but this CBT application turned things around. The practice exams closely resembled the real test, and my child was well-prepared, resulting in outstanding scores. I couldn't be happier.",
-    photo: User2,
-    testifier: "Peter Simon",
+    content: "8",
   },
 ];
 

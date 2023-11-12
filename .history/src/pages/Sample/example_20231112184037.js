@@ -59,8 +59,8 @@ let slidesData = [
     key: 8,
     content:
       "I was worried about my child's performance in the NECO exam, but this CBT application turned things around. The practice exams closely resembled the real test, and my child was well-prepared, resulting in outstanding scores. I couldn't be happier.",
-    photo: User2,
-    testifier: "Peter Simon",
+    photo: User3,
+    testifier: "Peter Olugbenga",
   },
 ];
 

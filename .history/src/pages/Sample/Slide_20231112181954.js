@@ -15,24 +15,19 @@ const SlideContainer = styled.div`
 
 const SlideCard = styled.div`
   position: relative;
-  padding: 30px 40px;
-  width: 520px;
-  height: 200px;
+
+  width: 100%;
+  height: 150px;
   background: white;
   font-size: 35px;
+  display: flex;
   align-items: center;
   justify-content: center;
   transform-origin: 50% 50%;
-  box-shadow: 0px 3px 6px #0000000d;
-  border: 1px solid #e7e7e7;
-  border-radius: 10px;
-  opacity: 1;
 `;
 
 function Slide({
   content,
-  photo,
-  testifier,
   offsetRadius,
   index,
   animationConfig,
@@ -77,38 +72,34 @@ function Slide({
   }
 
   return (
-    <Spring
-      to={{
-        transform: `translateX(0%) translateY(${translateY}%) scale(${distanceFactor})`,
-        top: `${
-          offsetRadius === 0 ? 50 : 50 + (offsetFromMiddle * 50) / offsetRadius
-        }%`,
-        opacity: distanceFactor * distanceFactor,
-      }}
-      config={animationConfig}
-    >
-      {(style) => (
-        <SlideContainer
-          style={{
-            ...style,
-            zIndex: Math.abs(Math.abs(offsetFromMiddle) - 2),
-          }}
-        >
-          <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
-            <center>
-              {" "}
-              <p>{content}</p>
-            </center>
-            <center>
-              <h6>
-                <img src={photo} alt="user" width="44px" />
-                {testifier}
-              </h6>
-            </center>
-          </SlideCard>
-        </SlideContainer>
-      )}
-    </Spring>
+    <div className="col-md-12">
+      {" "}
+      <Spring
+        to={{
+          transform: `translateX(0%) translateY(${translateY}%) scale(${distanceFactor})`,
+          top: `${
+            offsetRadius === 0
+              ? 50
+              : 50 + (offsetFromMiddle * 50) / offsetRadius
+          }%`,
+          opacity: distanceFactor * distanceFactor,
+        }}
+        config={animationConfig}
+      >
+        {(style) => (
+          <SlideContainer
+            style={{
+              ...style,
+              zIndex: Math.abs(Math.abs(offsetFromMiddle) - 2),
+            }}
+          >
+            <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
+              {content}
+            </SlideCard>
+          </SlideContainer>
+        )}
+      </Spring>
+    </div>
   );
 }
 

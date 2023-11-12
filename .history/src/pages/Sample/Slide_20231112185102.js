@@ -95,13 +95,10 @@ function Slide({
           }}
         >
           <SlideCard onClick={() => moveSlide(offsetFromMiddle)}>
-            <center>
-              {" "}
-              <p>{content}</p>
-            </center>
+            <center> {testifier}</center>
             <center>
               <h6>
-                <img src={photo} alt="user" width="44px" />
+                <img src={photo} alt="testifier" width="44px" />
                 {testifier}
               </h6>
             </center>
