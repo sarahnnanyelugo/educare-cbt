@@ -216,7 +216,7 @@ export const Home = () => {
           <Testimonials />
         </div>
       </div>
-      {/* <Link to={"/sample"}>Check</Link> */}
+      <Link to={"/sample"}>Check</Link>
       <div className="col-md-8 offset-md-2 flexy prefooter">
         <div className="col-md-6">
           <h1>
