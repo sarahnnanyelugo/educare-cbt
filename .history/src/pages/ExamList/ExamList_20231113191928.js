@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Exams } from "../../components/Exams/Exams";
 import { exams } from "../../TestData";
 import "./exam-list.scss";
@@ -9,21 +9,16 @@ import { useLocation } from "react-router-dom";
 
 export const ExamList = () => {
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
-  const [loggedIn, setLoggedIn] = useState(sessionStorage.getItem("logged_in"));
 
   const [state, setState] = useState({
     query: "",
     list: exams,
   });
   const location = useLocation();
-  useEffect(() => {
-    console.log(user);
-  });
+
   return (
     <>
-      <div>
-        {user !== null && loggedIn === "1" ? <Navbar /> : <EducareNavBar />}
-      </div>
+      <div>{user !== undefined ? <Navbar /> : <EducareNavBar />}</div>
       <div className="home-div col-md-10 offset-md-1 mt5">
         <div className="flexy flexyM unit">
           <h3>Search Questions</h3>

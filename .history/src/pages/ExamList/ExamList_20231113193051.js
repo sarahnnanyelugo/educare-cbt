@@ -9,7 +9,6 @@ import { useLocation } from "react-router-dom";
 
 export const ExamList = () => {
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
-  const [loggedIn, setLoggedIn] = useState(sessionStorage.getItem("logged_in"));
 
   const [state, setState] = useState({
     query: "",
@@ -21,9 +20,7 @@ export const ExamList = () => {
   });
   return (
     <>
-      <div>
-        {user !== null && loggedIn === "1" ? <Navbar /> : <EducareNavBar />}
-      </div>
+      <div>{user !== null ? <Navbar /> : <EducareNavBar />}</div>
       <div className="home-div col-md-10 offset-md-1 mt5">
         <div className="flexy flexyM unit">
           <h3>Search Questions</h3>

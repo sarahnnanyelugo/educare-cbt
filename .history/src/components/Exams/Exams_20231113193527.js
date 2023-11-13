@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 export const Exams = ({ data }) => {
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
-  const [loggedIn, setLoggedIn] = useState(sessionStorage.getItem("logged_in"));
   return (
     <>
       <div className="questions-div  col-12">
@@ -58,7 +57,7 @@ export const Exams = ({ data }) => {
                 <small>{data.unitNum}</small>
               </td>
               <td>
-                {user !== null && loggedIn === "1" ? (
+                {user !== null ? (
                   <TestModal />
                 ) : (
                   <Link to={"/authenticate"}>

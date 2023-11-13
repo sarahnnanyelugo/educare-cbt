@@ -22,7 +22,7 @@ export const ExamList = () => {
   return (
     <>
       <div>
-        {user !== null && loggedIn === "1" ? <Navbar /> : <EducareNavBar />}
+        {user !== null && loggedIn != "1" ? <Navbar /> : <EducareNavBar />}
       </div>
       <div className="home-div col-md-10 offset-md-1 mt5">
         <div className="flexy flexyM unit">

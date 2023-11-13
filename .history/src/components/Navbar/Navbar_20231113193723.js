@@ -13,8 +13,7 @@ export const Navbar = () => {
   const prevUrlRef = useRef(null);
   const [showNav, setShowNav] = useState(true);
   const logoutSet = () => {
-    console.log(sessionStorage.setItem("logged_in", 0));
-    toast.success("You have successfully logged out!");
+    console.log(sessionStorage.removeItem("user"));
     setInterval(() => {
       window.location = "/";
     }, 1000);
@@ -50,7 +49,7 @@ export const Navbar = () => {
   });
   return (
     <>
-      <ToastContainer />
+      {" "}
       <div className={`nav-container flexy flexyM${showNav ? "" : "hide"} `}>
         <div className="logo-holder  col-md-1 flexy col-2">
           {" "}

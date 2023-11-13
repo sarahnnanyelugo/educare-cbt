@@ -13,7 +13,7 @@ export const Navbar = () => {
   const prevUrlRef = useRef(null);
   const [showNav, setShowNav] = useState(true);
   const logoutSet = () => {
-    console.log(sessionStorage.setItem("logged_in", 0));
+    console.log(sessionStorage.removeItem("user"));
     toast.success("You have successfully logged out!");
     setInterval(() => {
       window.location = "/";
