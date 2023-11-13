@@ -224,12 +224,12 @@ function EducareNavBar() {
           <ul className=" list-inline list-unstyled nav-links-container web-nav hList">
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <Link className="menu-title">
+                <NavLink className="menu-title" activeclassName="active2">
                   <button className="nav-links menu-title">
                     {" "}
                     Products <i class="icofont-rounded-down"></i>
                   </button>
-                </Link>
+                </NavLink>
                 <div class="menu-dropdown ">
                   <MenuTab />
                 </div>
