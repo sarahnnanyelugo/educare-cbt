@@ -15,7 +15,7 @@ import { TestAnalysis } from "./pages/TestAnalysis/TestAnalysis";
 import { AnalysisDashboard } from "./pages/AnalysisDashboard/AnalysisDashboard";
 import { Sample } from "./pages/Sample/Sample";
 import { Home } from "./pages/Home/Home";
-import { LoginPage } from "./pages/LoginPage.js/LoginPage";
+import LoginForm from "./components/Form/LoginForm";
 function App() {
   return (
     <>
@@ -32,7 +32,7 @@ function App() {
         <Route path="review-page" element={<ReviewPage />} />{" "}
         <Route path="analysis-dashboard" element={<AnalysisDashboard />} />{" "}
         <Route path="sample" element={<Sample />} />{" "}
-        <Route path="login" element={<LoginPage />} />{" "}
+        <Route path="login" element={<LoginForm />} />{" "}
         <Route path="authenticate" element={<AuthenticationPage />} />{" "}
       </Routes>
     </>

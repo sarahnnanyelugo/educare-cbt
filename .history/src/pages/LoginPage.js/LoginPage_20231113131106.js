@@ -1,13 +1,13 @@
 import React from "react";
-import SignUpForm from "../../components/Form/SignUpForm";
+import LoginForm from "../../components/Form/LoginForm";
 import "./auth.scss";
-export const AuthenticationPage = () => {
+export const LoginPage = () => {
   return (
     <>
       <div className="col-md-4 offset-md-4 auth-page">
         <div className="col-md-8 offset-md-2">
           {" "}
-          <SignUpForm />
+          <LoginForm />
         </div>
       </div>
     </>

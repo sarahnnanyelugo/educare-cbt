@@ -1,5 +1,5 @@
 import React from "react";
-import SignUpForm from "../../components/Form/SignUpForm";
+// import SignUpForm from "../../components/Form/Form";
 import "./auth.scss";
 export const AuthenticationPage = () => {
   return (

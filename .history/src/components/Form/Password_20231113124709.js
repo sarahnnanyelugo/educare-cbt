@@ -19,7 +19,7 @@ export const Password = (props) => {
     <div className="password-input formpassword ">
       <input
         type={showPassword ? "text" : "password"}
-        name="password"
+        name="name"
         autocomplete="new-password"
         required
         value={password}
