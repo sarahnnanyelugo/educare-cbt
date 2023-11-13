@@ -224,7 +224,7 @@ function EducareNavBar() {
           <ul className=" list-inline list-unstyled nav-links-container web-nav hList">
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <NavLink className="menu-title" activeclassName="active2">
+                <NavLink className="menu-title">
                   <button className="nav-links menu-title">
                     {" "}
                     Products <i class="icofont-rounded-down"></i>
@@ -237,7 +237,7 @@ function EducareNavBar() {
             </li>{" "}
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <NavLink className="menu-title" activeclassName="active2">
+                <NavLink className="menu-title">
                   <button className="nav-links menu-title">
                     {" "}
                     Industries Served<i class="icofont-rounded-down"></i>
@@ -505,7 +505,7 @@ function EducareNavBar() {
             </li>{" "}
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <NavLink className="menu-title" activeclassName="active2">
+                <NavLink className="menu-title">
                   <button className="nav-links menu-title">
                     {" "}
                     Company <i class="icofont-rounded-down"></i>

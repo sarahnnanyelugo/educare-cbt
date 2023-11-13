@@ -224,7 +224,7 @@ function EducareNavBar() {
           <ul className=" list-inline list-unstyled nav-links-container web-nav hList">
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <NavLink className="menu-title" activeclassName="active2">
+                <NavLink className="menu-title">
                   <button className="nav-links menu-title">
                     {" "}
                     Products <i class="icofont-rounded-down"></i>
@@ -237,7 +237,7 @@ function EducareNavBar() {
             </li>{" "}
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <NavLink className="menu-title" activeclassName="active2">
+                <NavLink className="menu-title">
                   <button className="nav-links menu-title">
                     {" "}
                     Industries Served<i class="icofont-rounded-down"></i>
@@ -423,6 +423,7 @@ function EducareNavBar() {
                   <ul className="col-md-6 list-unstyled">
                     <li>
                       <NavLink
+                        activeclassName="active2"
                         to={"/support"}
                         className="menu-links list-group-item list-group-item-action"
                         type="button"
@@ -438,6 +439,7 @@ function EducareNavBar() {
                     </li>
                     <li>
                       <NavLink
+                        activeclassName="active2"
                         to={"/be-partner"}
                         className="menu-links list-group-item list-group-item-action"
                         type="button"
@@ -454,7 +456,9 @@ function EducareNavBar() {
                     <li>
                       <NavLink
                         to={"/blog"}
-                        className="menu-links list-group-item list-group-item-action"
+                        activeclassName="active2"
+                        className="menu-links list-group-item 
+                        list-group-item-action"
                         type="button"
                       >
                         <img
@@ -505,7 +509,7 @@ function EducareNavBar() {
             </li>{" "}
             <li className="list-inline-item web-nav">
               <a href="#click" class="menu">
-                <NavLink className="menu-title" activeclassName="active2">
+                <NavLink className="menu-title">
                   <button className="nav-links menu-title">
                     {" "}
                     Company <i class="icofont-rounded-down"></i>
