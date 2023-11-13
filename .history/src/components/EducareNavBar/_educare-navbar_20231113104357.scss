@@ -66,7 +66,8 @@
       }
     }
     .sign-in-button {
-      @include login-or-signup-button;
+      @include main-btn;
+      background: #fff;
       margin-top: 10px;
       @media screen and (max-width: 920px) {
         font-size: 10px !important;

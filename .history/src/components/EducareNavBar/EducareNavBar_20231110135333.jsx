@@ -569,10 +569,10 @@ function EducareNavBar() {
           </ul>
 
           <div className="nav-buttons web-nav">
-            <Link to={"/authenticate"}>
+            <Link to={"/sign-up"}>
               <button className="sign-in-button">Log in</button>
             </Link>
-            <Link to={"/authenticate"}>
+            <Link to={"/login"}>
               <button
                 className="get-started-button"
                 style={{ backgroundColor: "" + themeSet }}

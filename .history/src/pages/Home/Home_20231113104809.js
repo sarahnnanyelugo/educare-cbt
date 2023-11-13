@@ -229,7 +229,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="col-md-3 offset-md-3">
-          <Link to={"/authenticate"}>
+          <Link to={"/ authenticate"}>
             <button>Browse subjects</button>
           </Link>
         </div>
