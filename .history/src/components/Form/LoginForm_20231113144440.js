@@ -29,11 +29,9 @@ function LoginForm(props) {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    if (form?.email === user.email && form?.password === user.password) {
-      toast.success("You have successfully logged in");
-      setInterval(() => {
-        window.location = "./exam-list";
-      }, 1000);
+    if (login?.email === user.email && login?.password === user.password) {
+      setModalOpen(true);
+      alert("hello");
     } else {
       toast.error("Wrong info");
     }
@@ -75,11 +73,11 @@ function LoginForm(props) {
           <div className="col-md-5 bodda"></div>
         </div>
         <center>
-          <small>Login using</small>
+          <small className={login}>Login using</small>
         </center>
         <GoogleButton />
         <center>
-          <small style={{ fontSize: "12px" }}>
+          <small className={login} style={{ fontSize: "12px" }}>
             Dont have an account?{" "}
             <Link className="link2" to={"/authenticate"}>
               Signup here

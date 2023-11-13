@@ -48,7 +48,7 @@ function SignUpForm(props) {
         window.location = "./exam-list";
       }, 1000);
     }
-    sessionStorage.setItem("user", JSON.stringify(form));
+    localStorage.setItem("user", JSON.stringify(form));
   }
 
   const handleChecked = (event) => {

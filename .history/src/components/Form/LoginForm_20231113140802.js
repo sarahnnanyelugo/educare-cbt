@@ -7,7 +7,7 @@ import { GoogleButton } from "../GoogleButton/GoogleButton";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-function SignUpForm(props) {
+function LoginForm(props) {
   const [createAccount, setCreateAccount] = useState("hide");
   const [login, setLogin] = useState("show");
 
@@ -31,26 +31,14 @@ function SignUpForm(props) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!form?.email) {
-      toast.error("email is required");
-    } else if (!form?.password) {
-      toast.error("password is required");
-    } else if (form.password.length < 4) {
-      toast.error("password must be more than 4 characters");
-    } else if (form.password.length > 10) {
-      toast.error("password must be less than 10 characters");
-    } else if (!regex.test(form?.email)) {
-      toast.error("This is not a valid email");
+    let user = JSON.parse(sessionStorage.getItem("user"));
+    if (login?.email === user.email && login?.password === user.password) {
+      setModalOpen(true);
     } else {
-      toast.success("You have successfully signed in");
-      setInterval(() => {
-        window.location = "./exam-list";
-      }, 1000);
+      toast.error("Wrong info");
     }
-    sessionStorage.setItem("user", JSON.stringify(form));
   }
-
+  sessionStorage.setItem("user", JSON.stringify(form));
   const handleChecked = (event) => {
     setIsChecked(event.target.checked);
   };
@@ -66,14 +54,10 @@ function SignUpForm(props) {
     <>
       <ToastContainer />
       <form className=" form-container" action="" onSubmit={handleSubmit}>
-        {/* <h6 className={`form-heading ${login}`}>
+        <h6 className="form-heading">
           Log in to access <br />
           your account
-        </h6> */}
-        <h6 className="form-heading">
-          Create an account <br />
-          to continue
-        </h6>{" "}
+        </h6>
         <div class="form">
           <input type="email" name="email" onChange={handleChange} />
           <label for="text" class="label-name">
@@ -86,38 +70,7 @@ function SignUpForm(props) {
           name="password"
           type="password"
         />
-        {/* <Link className={`offset-md-7 link mt2 ${login}`}>
-          {" "}
-          Forgot Password?
-        </Link> */}
-        <span
-          style={{
-            fontFamily: " rebondG-Medium",
-            color: "black",
-            fontSize: "10px",
-            marginTop: "20px",
-          }}
-        >
-          <input
-            type="checkbox"
-            onChecked={handleChecked}
-            style={{ marginRight: "5px" }}
-          />
-          I agree to the{" "}
-          <strong>
-            <Link to={"/terms"} className="link">
-              Terms of Service
-            </Link>
-          </strong>{" "}
-          and
-          <strong>
-            {" "}
-            <Link to={"/privacy"} className="link">
-              Privacy Policy
-            </Link>
-            .
-          </strong>
-        </span>
+        <Link className="offset-md-7 link mt2"> Forgot Password?</Link>
         <button className="formButton">Continue</button>
         <div className="or flexy flexyM">
           <div className="col-md-5 bodda"></div>
@@ -130,14 +83,18 @@ function SignUpForm(props) {
           <div className="col-md-5 bodda"></div>
         </div>
         <center>
-          <small>Signup using</small>
+          <small className={login}>Login using</small>
         </center>
         <GoogleButton />
         <center>
-          <small style={{ fontSize: "12px" }}>
-            Already have an account?{" "}
-            <Link className="link2" to={"/login"}>
-              Login here
+          <small className={login} style={{ fontSize: "12px" }}>
+            Dont have an account?{" "}
+            <Link
+              onClick={createYourAccount}
+              className="link2"
+              to={"/authenticate"}
+            >
+              Signup here
             </Link>
           </small>
         </center>
@@ -146,4 +103,4 @@ function SignUpForm(props) {
   );
 }
 
-export default SignUpForm;
+export default LoginForm;

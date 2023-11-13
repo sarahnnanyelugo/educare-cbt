@@ -29,8 +29,10 @@ function SignUpForm(props) {
     console.log(form);
   }
   function handleSubmit(e) {
+    sessionStorage.setItem("user", JSON.stringify(form));
     e.preventDefault();
 
+    console.log(form?.password?.length);
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!form?.email) {
       toast.error("email is required");
@@ -48,7 +50,6 @@ function SignUpForm(props) {
         window.location = "./exam-list";
       }, 1000);
     }
-    sessionStorage.setItem("user", JSON.stringify(form));
   }
 
   const handleChecked = (event) => {

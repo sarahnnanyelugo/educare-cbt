@@ -30,10 +30,8 @@ function LoginForm(props) {
   function handleSubmit(e) {
     e.preventDefault();
     if (form?.email === user.email && form?.password === user.password) {
+      setModalOpen(true);
       toast.success("You have successfully logged in");
-      setInterval(() => {
-        window.location = "./exam-list";
-      }, 1000);
     } else {
       toast.error("Wrong info");
     }
