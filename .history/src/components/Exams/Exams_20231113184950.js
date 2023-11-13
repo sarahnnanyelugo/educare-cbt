@@ -58,12 +58,12 @@ export const Exams = ({ data }) => {
               </td>
               <td>
                 {user !== undefined ? (
-                  <TestModal />
-                ) : (
                   <Link to={"/authenticate"}>
                     {" "}
                     <button>Practice</button>
                   </Link>
+                ) : (
+                  <TestModal />
                 )}
               </td>
             </tr>
