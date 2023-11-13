@@ -8,8 +8,6 @@ import EducareNavBar from "../../components/EducareNavBar/EducareNavBar";
 import { useLocation } from "react-router-dom";
 
 export const ExamList = ({ componentToShow }) => {
-  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
-
   const [state, setState] = useState({
     query: "",
     list: exams,
@@ -18,7 +16,13 @@ export const ExamList = ({ componentToShow }) => {
 
   return (
     <>
-      <div>{user !== undefined ? <Navbar /> : <EducareNavBar />}</div>
+      {/* <div>
+        {componentToShow === "EducareNavBar" ? <EducareNavBar /> : <Navbar />}
+      </div> */}
+      <div>
+        {/* {location.pathname === "/home" ? <Navbar /> : <EducareNavBar />} */}
+        <Navbar />
+      </div>
       <div className="home-div col-md-10 offset-md-1 mt5">
         <div className="flexy flexyM unit">
           <h3>Search Questions</h3>

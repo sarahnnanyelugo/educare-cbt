@@ -18,7 +18,10 @@ export const ExamList = ({ componentToShow }) => {
 
   return (
     <>
-      <div>{user !== undefined ? <Navbar /> : <EducareNavBar />}</div>
+      <div>
+        {location.pathname === "/home" ? <Navbar /> : <EducareNavBar />}
+        <Navbar />
+      </div>
       <div className="home-div col-md-10 offset-md-1 mt5">
         <div className="flexy flexyM unit">
           <h3>Search Questions</h3>
