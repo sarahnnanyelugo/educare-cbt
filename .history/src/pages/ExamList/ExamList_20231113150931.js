@@ -7,7 +7,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import EducareNavBar from "../../components/EducareNavBar/EducareNavBar";
 import { useLocation } from "react-router-dom";
 
-export const ExamList = () => {
+export const ExamList = ({ componentToShow }) => {
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
 
   const [state, setState] = useState({

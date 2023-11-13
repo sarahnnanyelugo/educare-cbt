@@ -57,10 +57,12 @@ export const Exams = ({ data }) => {
                 <small>{data.unitNum}</small>
               </td>
               <td>
-                {user === undefined ? (
+                <TestModal />
+
+                {user !== undefined ? (
                   <Link to={"/authenticate"}>
                     {" "}
-                    <button>Practice</button>
+                    <button>sign in</button>
                   </Link>
                 ) : (
                   <TestModal />

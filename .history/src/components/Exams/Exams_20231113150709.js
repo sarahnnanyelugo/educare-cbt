@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./exams.scss";
 import Time from "../../assets/images/time.svg";
 import Question from "../../assets/images/question.svg";
@@ -7,8 +7,7 @@ import Table from "react-bootstrap/Table";
 import { TestModal } from "../TestModal/TestModal";
 import { Link } from "react-router-dom";
 
-export const Exams = ({ data }) => {
-  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
+export const Exams = ({ data, user }) => {
   return (
     <>
       <div className="questions-div  col-12">
@@ -57,14 +56,17 @@ export const Exams = ({ data }) => {
                 <small>{data.unitNum}</small>
               </td>
               <td>
-                {user === undefined ? (
-                  <Link to={"/authenticate"}>
-                    {" "}
-                    <button>Practice</button>
-                  </Link>
-                ) : (
-                  <TestModal />
-                )}
+                <TestModal />
+                <div>
+                  {user !== undefined ? (
+                    <Link to={"/authenticate"}>
+                      {" "}
+                      <button>Practice</button>
+                    </Link>
+                  ) : (
+                    <TestModal />
+                  )}
+                </div>
               </td>
             </tr>
           </tbody>
