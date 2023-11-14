@@ -568,20 +568,21 @@ function EducareNavBar() {
             </li>{" "}
           </ul> */}
 
-          <div className="nav-buttons offset-md-9 col-md-2">
-            <div className="col-md-9 offset-md-3">
-              <Link to={"/login"}>
-                <button className="sign-in-button">Log in</button>
-              </Link>
-              <Link to={"/authenticate"}>
-                <button
-                  className="get-started-button"
-                  style={{ backgroundColor: "" + themeSet }}
-                >
-                  Sign Up
-                </button>
-              </Link>
-            </div>
+          <div
+            className="nav-buttons offset-md-9"
+            style={{ marginLeft: "50px" }}
+          >
+            <Link to={"/login"}>
+              <button className="sign-in-button">Log in</button>
+            </Link>
+            <Link to={"/authenticate"}>
+              <button
+                className="get-started-button"
+                style={{ backgroundColor: "" + themeSet }}
+              >
+                Sign Up
+              </button>
+            </Link>
           </div>
         </div>
       </div>
