@@ -26,13 +26,7 @@
   //   }
   // }
   .logo-holder {
-    // flex-grow: 1;
-    img {
-      width: 50%;
-      @media screen and (max-width: 620px) {
-        width: 50%;
-      }
-    }
+    flex-grow: 1;
   }
   .nav-links-container {
     flex-grow: 1;
@@ -63,7 +57,7 @@
   .nav-buttons {
     .get-started-button {
       @include main-btn;
-      margin-left: 10px;
+      // margin-left: 10px;
       margin-top: 10px;
       @media screen and (max-width: 920px) {
         font-size: 10px !important;

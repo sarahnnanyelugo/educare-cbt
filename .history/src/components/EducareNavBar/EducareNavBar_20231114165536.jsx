@@ -214,7 +214,7 @@ function EducareNavBar() {
           } ${stick ? "" : "sticky"}`}
           id="nav"
         >
-          <div className="logo-holder  col-md-2 flexy col-7">
+          <div className="logo-holder  col-md-2 flexy ">
             {" "}
             <Link to={"/"}>
               {" "}
@@ -568,7 +568,7 @@ function EducareNavBar() {
             </li>{" "}
           </ul> */}
 
-          <div className="nav-buttons ">
+          <div className="nav-buttons web-nav">
             <Link to={"/login"}>
               <button className="sign-in-button">Log in</button>
             </Link>
@@ -584,7 +584,7 @@ function EducareNavBar() {
         </div>
       </div>
 
-      {/* <div className=" mobile-navigation ">
+      <div className=" mobile-navigation ">
         <div className="phone ">
           <div className="menu">
             <div className="nav-buttons web-nav">
@@ -618,13 +618,13 @@ function EducareNavBar() {
               <Accordion defaultActiveKey="">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header
-                   
+                    // style={{ background: themeSet2 }}
                     className="menu-navs"
                   >
                     <button
                       type="button"
                       className="list-group-item list-group-item-action m-accord menu-navs"
-                    
+                      // style={{ background: themeSet2 }}
                     >
                       Industries Served
                     </button>
@@ -852,15 +852,18 @@ function EducareNavBar() {
               <Accordion defaultActiveKey="">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header
-                 
+                    // style={{ background: themeSet2 }}
                     className="menu-navs"
                   >
                     <button
                       type="button"
                       className="list-group-item list-group-item-action m-accord menu-navs"
-                  
+                      // style={{ background: themeSet2 }}
                     >
-                    
+                      {" "}
+                      {/* <span style={{ color: themeSet }}>
+                        <i class="icofont-package"></i>
+                      </span> */}
                       Resources
                     </button>
                   </Accordion.Header>
@@ -993,13 +996,13 @@ function EducareNavBar() {
               <Accordion defaultActiveKey="">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header
-                 
+                    // style={{ background: themeSet2 }}
                     className="menu-navs"
                   >
                     <button
                       type="button"
                       className="list-group-item list-group-item-action m-accord menu-navs"
-                     
+                      // style={{ background: themeSet2 }}
                     >
                       Company
                     </button>
@@ -1091,7 +1094,7 @@ function EducareNavBar() {
             }}
           ></div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

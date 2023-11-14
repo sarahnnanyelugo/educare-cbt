@@ -214,7 +214,7 @@ function EducareNavBar() {
           } ${stick ? "" : "sticky"}`}
           id="nav"
         >
-          <div className="logo-holder  col-md-2 flexy col-7">
+          <div className="logo-holder  col-md-2 flexy ">
             {" "}
             <Link to={"/"}>
               {" "}
@@ -568,7 +568,7 @@ function EducareNavBar() {
             </li>{" "}
           </ul> */}
 
-          <div className="nav-buttons ">
+          <div className="nav-buttons web-nav">
             <Link to={"/login"}>
               <button className="sign-in-button">Log in</button>
             </Link>

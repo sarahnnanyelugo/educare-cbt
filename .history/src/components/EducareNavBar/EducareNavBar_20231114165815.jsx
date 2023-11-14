@@ -214,11 +214,11 @@ function EducareNavBar() {
           } ${stick ? "" : "sticky"}`}
           id="nav"
         >
-          <div className="logo-holder  col-md-2 flexy col-7">
+          <div className="logo-holder  col-md-2 flexy ">
             {" "}
             <Link to={"/"}>
               {" "}
-              <img className="   logo" src={Logo} alt="Scholar" width="50%" />
+              <img className="   logo" src={Logo} alt="Scholar" width="10%" />
             </Link>
           </div>
           {/* <ul className=" list-inline list-unstyled nav-links-container web-nav hList">

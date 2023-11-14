@@ -27,12 +27,6 @@
   // }
   .logo-holder {
     // flex-grow: 1;
-    img {
-      width: 50%;
-      @media screen and (max-width: 620px) {
-        width: 50%;
-      }
-    }
   }
   .nav-links-container {
     flex-grow: 1;

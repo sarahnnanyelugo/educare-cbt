@@ -214,7 +214,7 @@ function EducareNavBar() {
           } ${stick ? "" : "sticky"}`}
           id="nav"
         >
-          <div className="logo-holder  col-md-2 flexy col-7">
+          <div className="logo-holder  col-md-2 flexy col-4">
             {" "}
             <Link to={"/"}>
               {" "}
