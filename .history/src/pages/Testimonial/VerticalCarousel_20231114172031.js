@@ -7,9 +7,8 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  overflow: hidden;
 `;
 
 const NavigationButtons = styled.div`

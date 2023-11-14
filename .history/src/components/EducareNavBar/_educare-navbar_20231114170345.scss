@@ -26,9 +26,9 @@
   //   }
   // }
   .logo-holder {
-    // flex-grow: 1;
+    flex-grow: 1;
     img {
-      width: 100%;
+      width: 50%;
       @media screen and (max-width: 620px) {
         width: 50%;
         flex-grow: none;
@@ -62,7 +62,6 @@
     }
   }
   .nav-buttons {
-    // margin-left: 10px;
     .get-started-button {
       @include main-btn;
       margin-left: 10px;

@@ -27,9 +27,6 @@ const SlideCard = styled.div`
   border: 1px solid #e7e7e7;
   border-radius: 10px;
   opacity: 1;
-  @media screen and (min-width: 620px) {
-    width: 520px;
-  }
 `;
 
 function Slide({
