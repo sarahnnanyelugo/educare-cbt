@@ -13,6 +13,7 @@ import { SummaryPage } from "./pages/SummaryPage/SummaryPage";
 import { ReviewPage } from "./pages/ReviewPage/ReviewPage";
 import { TestAnalysis } from "./pages/TestAnalysis/TestAnalysis";
 import { AnalysisDashboard } from "./pages/AnalysisDashboard/AnalysisDashboard";
+import { Sample } from "./pages/Testimonials/Sample";
 import { Home } from "./pages/Home/Home";
 import { LoginPage } from "./pages/LoginPage.js/LoginPage";
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="summary-page" element={<SummaryPage />} />{" "}
         <Route path="review-page" element={<ReviewPage />} />{" "}
         <Route path="analysis-dashboard" element={<AnalysisDashboard />} />{" "}
+        <Route path="sample" element={<Sample />} />{" "}
         <Route path="login" element={<LoginPage />} />{" "}
         <Route path="authenticate" element={<AuthenticationPage />} />{" "}
       </Routes>

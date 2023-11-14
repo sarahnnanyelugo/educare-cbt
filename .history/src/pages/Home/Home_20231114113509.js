@@ -24,8 +24,10 @@ import Customize from "../../assets/images/customize.png";
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import Testimonials from "../Testimonial/Testimonials";
-
+// import { Sample } from "../Sample/Sample";
+import Example from "../Sample/example";
+// import VerticalCarousel from "../Sample/VerticalCarousel";
+import { Testimonials } from "./Testimonials/Testimonials";
 export const Home = () => {
   return (
     <>
@@ -159,8 +161,8 @@ export const Home = () => {
             Discover how we support success for every learner
           </h2>
         </center>
-        <div className="row row-cols-1 row-cols-lg-3 g-2 g-lg-5 discover2">
-          <div className="col mt margin2">
+        <div className="row row-cols-1 row-cols-lg-3 g-2 g-lg-5">
+          <div className="col mt">
             <center>
               <img src={Star} alt="" width="57px" />
               <h5>High Quality Contents:</h5>
@@ -171,7 +173,7 @@ export const Home = () => {
               </p>
             </center>
           </div>{" "}
-          <div className="col mt margin2">
+          <div className="col mt">
             <center>
               <img src={Schedule} alt="" width="57px" />
               <h5>Personalized Learning Paths:</h5>
@@ -183,7 +185,7 @@ export const Home = () => {
               </p>
             </center>
           </div>{" "}
-          <div className="col mt margin2">
+          <div className="col mt">
             <center>
               <img src={Customize} alt="" width="57px" />
               <h5>Detailed Analytics:</h5>
@@ -197,7 +199,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="col-md-10 offset-md-1 flexy discover">
-        <div className="col-md-4">
+        <div className="col-md-6">
           <small>For educators</small>
           <h3>Tools that empower teachers and educators</h3>
           <p>
@@ -206,27 +208,22 @@ export const Home = () => {
             adaptability in tailoring assessments enables educators to refine
             teaching strategies for a personalized learning experience.
           </p>
-          <Link to={"/exam-list"}>
-            {" "}
-            <button>Get started here</button>
-          </Link>
+          <button>Get started here</button>
         </div>
         <div className="col-md-6"></div>
       </div>{" "}
       <div className="col-md-10 offset-md-1 flexy discover">
         <div className="col-md-6">&nbsp;</div>
-        <div className="col-md-4 offset-md-2">
+        <div className="col-md-6">
           <small>For parents</small>
-          <h3>Your child deserves the best learning opportunities.</h3>
+          <h3>Tools that empower teachers and educators</h3>
           <p>
-            By signing up your child, you’re contributing to your child’s exam
-            success by learning and practicing our vetted past questions, coming
-            out with a outstanding results.
+            This technology enables educators with quick performance analysis,
+            revealing student strengths and areas for improvement. It’s
+            adaptability in tailoring assessments enables educators to refine
+            teaching strategies for a personalized learning experience.
           </p>
-          <Link to={"/exam-list"}>
-            {" "}
-            <button>Get started here</button>
-          </Link>
+          <button>Get started here</button>
         </div>
       </div>
       <div className="col-md-12 all-learners mt">
@@ -243,7 +240,7 @@ export const Home = () => {
             </p>
           </div>
         </center>
-        <div className="col-md-10 offset-md-1 row row-cols-1 row-cols-lg-3 g-2 g-lg-3 discover2">
+        <div className="col-md-10 offset-md-1 row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
           <div className="col">
             <h1>01</h1>
             <div className="steps">
@@ -291,7 +288,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="col-md-4 offset-md-1">
-          <Testimonials />
+          <Example />
         </div>
       </div>
       <div className="col-md-8 offset-md-2 flexy prefooter">

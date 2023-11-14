@@ -132,9 +132,8 @@
   .heading {
     margin-top: 300px;
     @media screen and (max-width: 620px) {
-      margin-top: 40px;
+      margin-top: 50px;
       text-align: center;
-      padding: 10px;
     }
     h4 {
       font-family: rebondG-Bold;
@@ -155,15 +154,8 @@
   opacity: 1;
   position: relative;
   z-index: 20;
-  @media screen and (max-width: 620px) {
-    height: fit-content;
-    margin-bottom: 0px;
-  }
   button {
     @include main-btn;
     margin-top: 70px;
-    @media screen and (max-width: 620px) {
-      margin-top: 20px;
-    }
   }
 }

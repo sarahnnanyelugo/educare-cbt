@@ -24,8 +24,9 @@ import Customize from "../../assets/images/customize.png";
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import Testimonials from "../Testimonial/Testimonials";
-
+import { Testimonial } from "../Testimonials/Testimonial";
+// import { Sample } from "../Sample/Sample";
+// import VerticalCarousel from "../Sample/VerticalCarousel";
 export const Home = () => {
   return (
     <>
@@ -291,7 +292,7 @@ export const Home = () => {
           </p>
         </div>
         <div className="col-md-4 offset-md-1">
-          <Testimonials />
+          <Testimonial />
         </div>
       </div>
       <div className="col-md-8 offset-md-2 flexy prefooter">

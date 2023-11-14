@@ -79,9 +79,10 @@
     text-align: center;
   }
 }
-.margin2 {
+.no-margin {
   @media screen and (max-width: 620px) {
-    margin-top: 40px !important;
+    margin-top: 0px !important;
+    text-align: center;
   }
 }
 .grad2 {

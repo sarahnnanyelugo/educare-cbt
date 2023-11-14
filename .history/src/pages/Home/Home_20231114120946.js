@@ -24,8 +24,9 @@ import Customize from "../../assets/images/customize.png";
 import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import Testimonials from "../Testimonial/Testimonials";
-
+// import { Sample } from "../Sample/Sample";
+import Testimonials from "../Testimonials/Testimonials";
+// import VerticalCarousel from "../Sample/VerticalCarousel";
 export const Home = () => {
   return (
     <>
