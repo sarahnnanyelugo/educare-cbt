@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./test-instructions.scss";
 import Alert from "../../assets/images/alert.svg";
 import { Link } from "react-router-dom";
-export const TestInstructions = () => {
-  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
 
+export const TestInstructions = () => {
   return (
     <div className="test-instructions-div">
       <div className="col-md-8 offset-md-2 T-instructions">
@@ -19,11 +18,11 @@ export const TestInstructions = () => {
             </h6>
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-3 col-3">Subject:</h6>
+              <h6 className="col-md-3 ">Subject:</h6>
               <p>Chemistry</p>
             </div>
             <div className="flexy flexyM">
-              <h6 className="col-md-3 col-3">Test Title:</h6>
+              <h6 className="col-md-3 ">Test Title:</h6>
               <p>
                 2010 MATHEMATICS JAMB PRACTICE 2 (2010 MATHEMATICS JAMB PRACTICE
                 2)
@@ -48,17 +47,17 @@ export const TestInstructions = () => {
           <div className="col-md-2 offset-md-2">
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-7 col-4">Total Mark:</h6>
+              <h6 className="col-md-7 ">Total Mark:</h6>
               <p>50</p>
             </div>{" "}
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-7 col-4">Duration:</h6>
+              <h6 className="col-md-7 ">Duration:</h6>
               <p>30mins</p>
             </div>{" "}
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-7 col-4">Questions:</h6>
+              <h6 className="col-md-7 ">Questions:</h6>
               <p>50</p>
             </div>
           </div>

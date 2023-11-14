@@ -63,7 +63,7 @@ export const ReviewPage = () => {
             </div>{" "}
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-3 col-3">Test Title:</h6>
+              <h6 className="col-md-3 col-4">Test Title:</h6>
               <p>2010 MATHEMATICS JAMB PRACTICE 2</p>
             </div>
           </div>

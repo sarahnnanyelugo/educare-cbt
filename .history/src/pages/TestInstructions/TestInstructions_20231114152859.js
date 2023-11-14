@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./test-instructions.scss";
 import Alert from "../../assets/images/alert.svg";
 import { Link } from "react-router-dom";
-export const TestInstructions = () => {
-  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
 
+export const TestInstructions = () => {
   return (
     <div className="test-instructions-div">
       <div className="col-md-8 offset-md-2 T-instructions">

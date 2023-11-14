@@ -53,17 +53,17 @@ export const ReviewPage = () => {
           <div className="col-md-5 ">
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-3 col-3">Students:</h6>
+              <h6 className="col-md-3 ">Students:</h6>
               <p style={{ color: "#2F67D8" }}>Peter Olugbenga</p>
             </div>
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-3 col-3">Subject:</h6>
+              <h6 className="col-md-3">Subject:</h6>
               <p style={{ color: "#C32BD6" }}>Chemistry</p>
             </div>{" "}
             <div className="flexy flexyM">
               {" "}
-              <h6 className="col-md-3 col-3">Test Title:</h6>
+              <h6 className="col-md-3">Test Title:</h6>
               <p>2010 MATHEMATICS JAMB PRACTICE 2</p>
             </div>
           </div>
