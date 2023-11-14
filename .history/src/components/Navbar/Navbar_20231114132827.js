@@ -78,13 +78,11 @@ export const Navbar = () => {
             <button> Wallet</button>
           </NavLink>{" "}
         </div>
-        <div className="flexyM flexy">
-          {" "}
-          <img className="  " src={Bell} alt="Scholar" />
-          <div className="menu-holder" onClick={logoutSet}>
-            <img className="menu-icon" src={Menu} alt="Scholar" />
-            <img className="   person" src={Person} alt="Scholar" />
-          </div>
+        {/* <div> */} <img className="   logo" src={Bell} alt="Scholar" />
+        {/* </div> */}
+        <div className="menu-holder" onClick={logoutSet}>
+          <img className="menu-icon" src={Menu} alt="Scholar" />
+          <img className="   person" src={Person} alt="Scholar" />
         </div>
       </div>
     </>

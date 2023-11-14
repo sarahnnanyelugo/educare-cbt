@@ -80,10 +80,6 @@
   border-radius: 11px;
   height: 400px;
   padding: 20px;
-  @media screen and (max-width: 620px) {
-    height: fit-content;
-    // padding: 10px;
-  }
 }
 
 .chart-div2 {

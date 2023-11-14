@@ -54,15 +54,15 @@ export const AnalysisDashboard = () => {
                       <h6>Subject: </h6>
                       <p>Chemistry</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Test Title:</h6>
                       <p>2010 Chemistry Jamb Practice</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Date Attempted:</h6>
                       <p>30-Oct-2023 1:37 PM</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Result Status:</h6>
                       <div>
                         {" "}
@@ -76,25 +76,25 @@ export const AnalysisDashboard = () => {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Total Mark:</h6>
                       <p>50</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Duration:</h6>
                       <p>30mins</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Questions:</h6>
                       <p>50</p>
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Percentage Mark:</h6>
                       <p>2.04%</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Mark per Question:</h6>
                       <p>1</p>
                     </div>

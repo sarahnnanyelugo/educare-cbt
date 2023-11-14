@@ -94,7 +94,7 @@ export const AnalysisDashboard = () => {
                       <h6>Percentage Mark:</h6>
                       <p>2.04%</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Mark per Question:</h6>
                       <p>1</p>
                     </div>

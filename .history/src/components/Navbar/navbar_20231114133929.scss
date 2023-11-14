@@ -8,10 +8,7 @@
   }
   .logo-holder {
     flex-grow: 1;
-
-    @media screen and (max-width: 620px) {
-      margin-right: 10px;
-    }
+    margin-right: 10px;
     img {
       width: 50%;
       @media screen and (max-width: 620px) {

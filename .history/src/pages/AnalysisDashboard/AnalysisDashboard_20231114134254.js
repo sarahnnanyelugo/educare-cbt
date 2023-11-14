@@ -76,25 +76,25 @@ export const AnalysisDashboard = () => {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Total Mark:</h6>
                       <p>50</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Duration:</h6>
                       <p>30mins</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Questions:</h6>
                       <p>50</p>
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Percentage Mark:</h6>
                       <p>2.04%</p>
                     </div>
-                    <div className="flexy  flexyM">
+                    <div className="flexy">
                       <h6>Mark per Question:</h6>
                       <p>1</p>
                     </div>

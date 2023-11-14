@@ -51,7 +51,7 @@ export const Navbar = () => {
   return (
     <>
       <ToastContainer />
-      <div className={`nav-container flexy flexyM${showNav ? "" : "hide"} `}>
+      <div className={`nav-container flexy flexyM ${showNav ? "" : "hide"} `}>
         <div className="logo-holder  col-md-1 flexy col-2">
           {" "}
           <Link to={"/"}>
@@ -80,7 +80,7 @@ export const Navbar = () => {
         </div>
         <div className="flexyM flexy">
           {" "}
-          <img className="  " src={Bell} alt="Scholar" />
+          <img className="   logo" src={Bell} alt="Scholar" />
           <div className="menu-holder" onClick={logoutSet}>
             <img className="menu-icon" src={Menu} alt="Scholar" />
             <img className="   person" src={Person} alt="Scholar" />
