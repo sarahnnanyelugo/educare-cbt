@@ -53,9 +53,7 @@ export const TestAnalysis = () => {
                 {" "}
                 <div className="row3">Time Used (mins)</div>
               </th>
-              <th>
-                <div className="row3"> Action</div>
-              </th>
+              <th>Action</th>
             </tr>
           </Table>
           {state.list.map((data, index) => (

@@ -37,8 +37,8 @@
     margin-left: 20px;
   }
 }
-tr {
+tr th {
   @media screen and (max-width: 620px) {
-    overflow: scroll !important;
+    overflow: scroll;
   }
 }

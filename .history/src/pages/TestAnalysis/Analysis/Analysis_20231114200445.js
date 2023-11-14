@@ -23,52 +23,35 @@ export const Analysis = ({ data }) => {
                   />
                 </div>
               </td>
-              <td className="col-md-3 ">
+              <td className="col-md-3 col-6">
                 {" "}
-                <div className="row1">
-                  {" "}
-                  <small>{data.examType}</small>
-                </div>
+                <small>{data.examType}</small>
               </td>
-              <td className="col-md-2 ">
+              <td className="col-md-2 col-4">
                 {" "}
-                <div className="row4">
-                  {" "}
-                  <small>{data.subject}</small>
-                </div>
+                <small>{data.subject}</small>
               </td>
               <td className="col-md-2">
                 {" "}
-                <div className="row3">
-                  {" "}
-                  <small>{data.date}</small>
-                  <br />
-                  <small>{data.time}</small>
-                </div>
+                <small>{data.date}</small>
+                <br />
+                <small>{data.time}</small>
               </td>
               <td className="col-md-1">
                 {" "}
-                <div className="row4">
-                  {" "}
-                  <small>{data.score}</small>
-                </div>
+                <small>{data.score}</small>
               </td>
               <td className="col-md-2">
-                <div className="row4">
-                  {" "}
-                  <small> {data.duration}</small>
-                </div>
+                {/* <TestModal /> */}
+                <small> {data.duration}</small>
               </td>
               <td>
-                <div className="row3">
-                  {" "}
-                  <Link to={"/analysis-dashboard"}>
-                    <button>
-                      <img src={Icon} alt="icon" />
-                      Details
-                    </button>
-                  </Link>
-                </div>
+                <Link to={"/analysis-dashboard"}>
+                  <button>
+                    <img src={Icon} alt="icon" />
+                    Details
+                  </button>
+                </Link>
               </td>
             </tr>
           </tbody>

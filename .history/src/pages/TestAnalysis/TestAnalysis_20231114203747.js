@@ -43,19 +43,10 @@ export const TestAnalysis = () => {
               <th className="col-md-2">
                 <div className="row3"> Subjects</div>
               </th>
-              <th>
-                <div className="row3">Date Attempted</div>
-              </th>
-              <th>
-                <div className="row3"> Total Score</div>
-              </th>
-              <th>
-                {" "}
-                <div className="row3">Time Used (mins)</div>
-              </th>
-              <th>
-                <div className="row3"> Action</div>
-              </th>
+              <th>Date Attempted</th>
+              <th>Total Score</th>
+              <th>Time Used (mins)</th>
+              <th>Action</th>
             </tr>
           </Table>
           {state.list.map((data, index) => (

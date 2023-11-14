@@ -39,7 +39,7 @@ export const Analysis = ({ data }) => {
               </td>
               <td className="col-md-2">
                 {" "}
-                <div className="row3">
+                <div className="row4">
                   {" "}
                   <small>{data.date}</small>
                   <br />
@@ -48,27 +48,22 @@ export const Analysis = ({ data }) => {
               </td>
               <td className="col-md-1">
                 {" "}
-                <div className="row4">
+                <div className="row2">
                   {" "}
                   <small>{data.score}</small>
                 </div>
               </td>
               <td className="col-md-2">
-                <div className="row4">
-                  {" "}
-                  <small> {data.duration}</small>
-                </div>
+                {/* <TestModal /> */}
+                <small> {data.duration}</small>
               </td>
               <td>
-                <div className="row3">
-                  {" "}
-                  <Link to={"/analysis-dashboard"}>
-                    <button>
-                      <img src={Icon} alt="icon" />
-                      Details
-                    </button>
-                  </Link>
-                </div>
+                <Link to={"/analysis-dashboard"}>
+                  <button>
+                    <img src={Icon} alt="icon" />
+                    Details
+                  </button>
+                </Link>
               </td>
             </tr>
           </tbody>

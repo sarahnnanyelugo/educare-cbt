@@ -1,7 +1,4 @@
 .test-analysis-div {
-  @media screen and (max-width: 620px) {
-    padding: 30px 20px;
-  }
   .search-bar {
     .list {
       flex-grow: 1;
@@ -35,10 +32,5 @@
   img {
     margin-top: -65px;
     margin-left: 20px;
-  }
-}
-tr {
-  @media screen and (max-width: 620px) {
-    overflow: scroll !important;
   }
 }

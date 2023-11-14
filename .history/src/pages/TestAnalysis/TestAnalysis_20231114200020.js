@@ -18,11 +18,11 @@ export const TestAnalysis = () => {
       <Navbar />
       <div className="test-analysis-div col-md-10 offset-md-1">
         <div className="flexy flexyM search-bar mt6">
-          <div className="lisxt ">
+          <div className="lisxt">
             {" "}
             <h5>Test List</h5>
           </div>
-          <div className="col-md-2 search-input offset-md-9 offset-2">
+          <div className="col-md-2 search-input offset-md-8">
             {" "}
             <input type="search" placeholder="search" />
             <img src={Icon} alt="" />
@@ -31,31 +31,15 @@ export const TestAnalysis = () => {
         <div className="row analysis-table">
           <Table>
             <tr>
-              <th className="col-md-1">
-                <div className="row3" style={{ color: "#fff" }}>
-                  {" "}
-                  logooo
-                </div>
+              <th style={{ color: "#fff" }} className="col-md-1">
+                logooo
               </th>
-              <th className="col-md-3 ">
-                <div className="row3">Name</div>
-              </th>
-              <th className="col-md-2">
-                <div className="row3"> Subjects</div>
-              </th>
-              <th>
-                <div className="row3">Date Attempted</div>
-              </th>
-              <th>
-                <div className="row3"> Total Score</div>
-              </th>
-              <th>
-                {" "}
-                <div className="row3">Time Used (mins)</div>
-              </th>
-              <th>
-                <div className="row3"> Action</div>
-              </th>
+              <th className="col-md-3">Name</th>
+              <th className="col-md-2">Subjects</th>
+              <th>Date Attempted</th>
+              <th>Total Score</th>
+              <th>Time Used (mins)</th>
+              <th>Action</th>
             </tr>
           </Table>
           {state.list.map((data, index) => (

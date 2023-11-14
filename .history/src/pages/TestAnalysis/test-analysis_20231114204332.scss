@@ -1,6 +1,6 @@
 .test-analysis-div {
   @media screen and (max-width: 620px) {
-    padding: 30px 20px;
+    padding: 30px 10px;
   }
   .search-bar {
     .list {
@@ -37,8 +37,8 @@
     margin-left: 20px;
   }
 }
-tr {
+tr th {
   @media screen and (max-width: 620px) {
-    overflow: scroll !important;
+    overflow: scroll;
   }
 }
