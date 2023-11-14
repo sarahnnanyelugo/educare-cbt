@@ -42,6 +42,6 @@
 }
 tr {
   @media screen and (max-width: 620px) {
-    // overflow: display;
+    overflow: scroll !important;
   }
 }

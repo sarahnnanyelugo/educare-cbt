@@ -6,7 +6,7 @@
 
   @media screen and (max-width: 620px) {
     height: fit-content;
-    // overflow: scroll;
+    overflow: scroll;
   }
   button {
     @include main-btn;

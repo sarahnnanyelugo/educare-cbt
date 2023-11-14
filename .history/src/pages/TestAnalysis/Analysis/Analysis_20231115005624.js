@@ -48,7 +48,7 @@ export const Analysis = ({ data }) => {
               </td>
               <td className="col-md-1">
                 {" "}
-                <div className="row3">
+                <div className="row4">
                   {" "}
                   <small>{data.score}</small>
                 </div>
