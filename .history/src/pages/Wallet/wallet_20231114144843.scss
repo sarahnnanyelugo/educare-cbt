@@ -28,7 +28,7 @@
   margin-top: 20px;
   @media screen and (max-width: 620px) {
     height: fit-content;
-    padding: 10px 40px;
+    padding: 40px;
   }
   small {
     font-size: 12px;
@@ -50,8 +50,32 @@
     margin-top: 20px;
   }
 }
-.wallet-page {
-  @media screen and (max-width: 620px) {
-    padding: 0 10px;
-  }
+
+.your-div {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
 }
+
+.your-div.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add a delay for each div */
+.your-div:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+.your-div:nth-child(2) {
+  transition-delay: 1s;
+}
+
+.your-div:nth-child(3) {
+  transition-delay: 1.5s;
+}
+.your-div:nth-child(4) {
+  transition-delay: 2s;
+}
+
+/* Add more rules for additional divs */

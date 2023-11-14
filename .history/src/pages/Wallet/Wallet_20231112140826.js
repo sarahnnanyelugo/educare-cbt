@@ -25,10 +25,7 @@ export const Wallet = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="col-md-10 offset-md-1 wallet-page"
-        style={{ marginTop: "60px" }}
-      >
+      <div className="col-md-10 offset-md-1 " style={{ marginTop: "60px" }}>
         <div className="flexy flexyM">
           <h6 style={{ flexGrow: "1" }}>Wallet</h6>
           <small>200 Naira = 200 units</small>
@@ -81,6 +78,8 @@ export const Wallet = () => {
           </div>
         </div>
       </div>
+
+      
     </>
   );
 };
