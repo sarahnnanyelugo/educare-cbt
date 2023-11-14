@@ -15,15 +15,15 @@ export const AnswerSummary = ({ data }) => {
             {" "}
             <p>{data.question}</p>
             <div className="flexy flexyM">
-              <h6 className="col-md-2 col-6">Your Answer:</h6>
+              <h6 className="col-md-2">Your Answer:</h6>
               <p>{data.yourAnswer}</p>
             </div>{" "}
             <div className="flexy flexyM">
-              <h6 className="col-md-2 col-6">Correct Answer:</h6>
+              <h6 className="col-md-2">Correct Answer:</h6>
               <p>{data.correctAnswer}</p>
             </div>
             <div className="flexy flexyM">
-              <h6 className="col-md-2 col-6">Mark Obtained:</h6>
+              <h6 className="col-md-2 col-4">Mark Obtained:</h6>
               <div
                 className="num"
                 style={{
@@ -37,7 +37,7 @@ export const AnswerSummary = ({ data }) => {
                 <small> {data.markObtained}</small>
               </div>
             </div>
-            <div className="flexy ">
+            <div className="flexy flexyM">
               <h6 className="col-md-2">Answer Explanation:</h6>
               <div>
                 <p>{data.answerExplanation}</p>
@@ -54,7 +54,7 @@ export const AnswerSummary = ({ data }) => {
               </div>
             </div>
             <div className="flexy flexyM">
-              <h6 className="col-md-2 col-4"> Difficulty:</h6>
+              <h6 className="col-md-2"> Difficulty</h6>
               <div
                 className="num2"
                 style={{

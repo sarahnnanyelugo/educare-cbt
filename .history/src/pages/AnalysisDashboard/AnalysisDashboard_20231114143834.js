@@ -164,7 +164,7 @@ export const AnalysisDashboard = () => {
               </div>
             </div>
             <div className={`panel ${checkActive(2, "active2")}`}>
-              <div className="offset-md-9 badges">
+              <div className="offset-md-9 ">
                 <center>
                   <Badge
                     text="Correct"

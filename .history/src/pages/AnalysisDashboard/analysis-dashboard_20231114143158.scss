@@ -41,9 +41,6 @@
     color: #191919;
     font-family: rebondG-Semi-Bold;
     font-size: 20px;
-    @media screen and (max-width: 620px) {
-      font-size: 14px;
-    }
   }
 
   .panel {
@@ -56,7 +53,7 @@
   }
   @media screen and (max-width: 620px) {
     .panel {
-      padding-top: 40px;
+      padding: 0px;
     }
   }
   .panel.active2 {
@@ -140,10 +137,5 @@
     small {
       margin-top: -15px !important;
     }
-  }
-}
-.badges {
-  button {
-    margin: 0 8px;
   }
 }

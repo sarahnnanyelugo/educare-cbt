@@ -56,7 +56,7 @@
   }
   @media screen and (max-width: 620px) {
     .panel {
-      padding-top: 40px;
+      padding: 0px;
     }
   }
   .panel.active2 {
@@ -140,10 +140,5 @@
     small {
       margin-top: -15px !important;
     }
-  }
-}
-.badges {
-  button {
-    margin: 0 8px;
   }
 }

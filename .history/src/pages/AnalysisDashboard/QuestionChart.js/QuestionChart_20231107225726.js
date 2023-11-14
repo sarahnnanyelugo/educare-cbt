@@ -59,7 +59,7 @@ class QuestionChart extends Component {
           options={this.state.options}
           series={this.state.series}
           type="pie"
-          width="100%"
+          width="70%"
         />
       </div>
     );

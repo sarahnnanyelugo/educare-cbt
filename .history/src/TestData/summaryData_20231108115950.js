@@ -40,7 +40,7 @@ export const examSummary = [
       " From the above calculations, 6 moles of neon and 3 moles of oxygen both contain the same number of atoms, which is the highest among the given options. However, since neon is given preference in the options, the correct answer is 6 moles of neon.",
   },
   {
-    questionNum: 2,
+    questionNum: 1,
     question:
       "Which of the following gases contains the highest number of atoms at s.t.p?",
 

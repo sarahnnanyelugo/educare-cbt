@@ -37,7 +37,7 @@ export const AnswerSummary = ({ data }) => {
                 <small> {data.markObtained}</small>
               </div>
             </div>
-            <div className="flexy ">
+            <div className="flexy flexyM">
               <h6 className="col-md-2">Answer Explanation:</h6>
               <div>
                 <p>{data.answerExplanation}</p>
@@ -54,7 +54,7 @@ export const AnswerSummary = ({ data }) => {
               </div>
             </div>
             <div className="flexy flexyM">
-              <h6 className="col-md-2 col-4"> Difficulty:</h6>
+              <h6 className="col-md-2"> Difficulty</h6>
               <div
                 className="num2"
                 style={{

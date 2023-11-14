@@ -105,9 +105,10 @@ export const AnalysisDashboard = () => {
                 <div className="col">
                   {" "}
                   <div className=" chart-div">
-                    <h6>Question Chart (Performance)</h6>
                     <hr />
                     <div className="col-md-9 col-12">
+                      <h6>Question Chart (Performance)</h6>
+                      <hr />
                       <QuestionChart />
                     </div>
                   </div>
@@ -164,7 +165,7 @@ export const AnalysisDashboard = () => {
               </div>
             </div>
             <div className={`panel ${checkActive(2, "active2")}`}>
-              <div className="offset-md-9 badges">
+              <div className="offset-md-9">
                 <center>
                   <Badge
                     text="Correct"
