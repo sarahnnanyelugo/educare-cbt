@@ -568,7 +568,7 @@ function EducareNavBar() {
             </li>{" "}
           </ul> */}
 
-          <div className="nav-buttons offset-md-8 col-md-2 ">
+          <div className="nav-buttons offset-md-8 col-md-2 offset-6">
             <div className="col-md-9 offset-md-3">
               <Link to={"/login"}>
                 <button className="sign-in-button">Log in</button>

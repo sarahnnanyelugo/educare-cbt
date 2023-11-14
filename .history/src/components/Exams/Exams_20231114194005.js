@@ -20,30 +20,24 @@ export const Exams = ({ data }) => {
                 {" "}
                 <h6>{data.num}.</h6>
               </td>
-              <td className="col-md-1 ">
+              <td className="col-md-1 col-4">
                 {" "}
-                <div className="row4">
-                  {" "}
-                  <img
-                    src={data.examType}
-                    alt="logo"
-                    width="50px"
-                    height="50px"
-                    className="examlogo"
-                  />
-                </div>
+                <img
+                  src={data.examType}
+                  alt="logo"
+                  width="50px"
+                  height="50px"
+                  className="examlogo"
+                />
               </td>
-              <td className="col-md-4 ">
+              <td className="col-md-4 col-6">
                 {" "}
-                <div className="row1">
-                  {" "}
-                  <h6>{data.examYearTypeSubject}</h6>
-                  <p>{data.examDetails}</p>
-                </div>
+                <h6>{data.examYearTypeSubject}</h6>
+                <p>{data.examDetails}</p>
               </td>
-              <td className="col-md-2 ">
+              <td className="col-md-2 col-4">
                 {" "}
-                <div className="flexy row2" style={{ marginBottom: "7px" }}>
+                <div className="flexy" style={{ marginBottom: "7px" }}>
                   <img src={Time} alt="logo" width="22px" height="22px" />
                   <small>{data.examDuration}</small>
                 </div>
@@ -54,16 +48,14 @@ export const Exams = ({ data }) => {
               </td>
               <td className="col-md-4">
                 {" "}
-                <div className="flexy row3">
+                <div className="flexy">
                   <img src={Tick} alt="logo" width="22px" height="22px" />
                   <small>{data.examMarks}</small>
                 </div>
               </td>
               <td className="col-md-2">
                 {" "}
-                <div className=" row4">
-                  <small>{data.unitNum}</small>
-                </div>
+                <small>{data.unitNum}</small>
               </td>
               <td>
                 {user !== null && loggedIn === "1" ? (

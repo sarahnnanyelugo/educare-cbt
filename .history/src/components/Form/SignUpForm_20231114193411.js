@@ -124,7 +124,7 @@ function SignUpForm(props) {
           <div className="col-md-2 col-2">
             <center>
               {" "}
-              <p style={{ fontSize: "10px" }}>Or</p>
+              <p style={{ fontSize: "20px" }}>Or</p>
             </center>
           </div>
           <div className="col-md-5 bodda col-5"></div>

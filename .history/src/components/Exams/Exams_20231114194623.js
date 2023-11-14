@@ -20,18 +20,15 @@ export const Exams = ({ data }) => {
                 {" "}
                 <h6>{data.num}.</h6>
               </td>
-              <td className="col-md-1 ">
+              <td className="col-md-1 col-4">
                 {" "}
-                <div className="row4">
-                  {" "}
-                  <img
-                    src={data.examType}
-                    alt="logo"
-                    width="50px"
-                    height="50px"
-                    className="examlogo"
-                  />
-                </div>
+                <img
+                  src={data.examType}
+                  alt="logo"
+                  width="50px"
+                  height="50px"
+                  className="examlogo"
+                />
               </td>
               <td className="col-md-4 ">
                 {" "}
@@ -59,11 +56,9 @@ export const Exams = ({ data }) => {
                   <small>{data.examMarks}</small>
                 </div>
               </td>
-              <td className="col-md-2">
+              <td className="col-md-2 row3">
                 {" "}
-                <div className=" row4">
-                  <small>{data.unitNum}</small>
-                </div>
+                <small>{data.unitNum}</small>
               </td>
               <td>
                 {user !== null && loggedIn === "1" ? (

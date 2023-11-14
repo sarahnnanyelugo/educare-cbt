@@ -4,9 +4,6 @@
 .home-div {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (max-width: 620px) {
-    padding: 60px 10px;
-  }
   .unit {
     h3 {
       flex-grow: 1;

@@ -121,7 +121,7 @@ function SignUpForm(props) {
         <button className="formButton">Continue</button>
         <div className="or flexy flexyM">
           <div className="col-md-5 bodda col-5"></div>
-          <div className="col-md-2 col-2">
+          <div className="col-md-2">
             <center>
               {" "}
               <p style={{ fontSize: "10px" }}>Or</p>
