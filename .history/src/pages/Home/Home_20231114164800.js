@@ -199,7 +199,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="col-md-10 offset-md-1 flexy discover">
-        <div className="col-md-4 mt8 no-margin">
+        <div className="col-md-4">
           <small>For educators</small>
           <h3>Tools that empower teachers and educators</h3>
           <p>
@@ -213,17 +213,11 @@ export const Home = () => {
             <button>Get started here</button>
           </Link>
         </div>
-        <div className="col-md-6 offset-md-2 margin2">
-          {" "}
-          <img src={Educators} alt="" width="100%" />
-        </div>
+        <div className="col-md-6"></div>
       </div>{" "}
       <div className="col-md-10 offset-md-1 flexy discover">
-        <div className="col-md-6">
-          {" "}
-          <img src={Parents} alt="" width="100%" />
-        </div>
-        <div className="col-md-4 offset-md-2 mt8 no-margin">
+        <div className="col-md-6">&nbsp;</div>
+        <div className="col-md-4 offset-md-2">
           <small>For parents</small>
           <h3>Your child deserves the best learning opportunities.</h3>
           <p>

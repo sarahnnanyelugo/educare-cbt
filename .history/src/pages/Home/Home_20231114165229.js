@@ -213,7 +213,7 @@ export const Home = () => {
             <button>Get started here</button>
           </Link>
         </div>
-        <div className="col-md-6 offset-md-2 margin2">
+        <div className="col-md-6 offset-md-2">
           {" "}
           <img src={Educators} alt="" width="100%" />
         </div>
