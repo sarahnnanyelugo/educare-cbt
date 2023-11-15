@@ -37,7 +37,7 @@ export const Home = () => {
         <div className="col-md-4 offset-md-1 mt">
           <h1>
             Your Exam Journey
-            <br /> Starts Here. ⚡︎
+            <br /> Starts Here ⚡︎.
           </h1>
           <p className="col-md-10">
             Achieve exam-ready confidence with our CBT tools, providing
