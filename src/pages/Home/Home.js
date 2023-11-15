@@ -27,7 +27,6 @@ import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Testimonials from "../Testimonial/Testimonials";
-import { SatelliteTwoTone } from "@material-ui/icons";
 
 export const Home = () => {
   return (
