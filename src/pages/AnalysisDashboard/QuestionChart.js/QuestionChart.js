@@ -9,7 +9,7 @@ class QuestionChart extends Component {
     this.state = {
       options: {
         labels: ["Correct", "Incorrect", "Unattempted"],
-        color: ["#CECBCB", "#4A13B2", "#2F67D8"],
+        color: ["#CECBCB", "#5044B2", "#3067D8"],
 
         fill: {
           type: "solid",

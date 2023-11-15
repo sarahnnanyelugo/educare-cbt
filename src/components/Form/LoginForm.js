@@ -29,14 +29,14 @@ function LoginForm(props) {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    if (form?.email === user.email && form?.password === user.password) {
+    if (form?.email === user?.email && form?.password === user?.password) {
       sessionStorage.setItem("logged_in", 1);
       toast.success("You have successfully logged in");
       setInterval(() => {
         window.location = "./exam-list";
       }, 1000);
     } else {
-      toast.error("Wrong info");
+      toast.error("Email/Password is incorrect or You are not yet registered.");
     }
   }
   const handleChecked = (event) => {
