@@ -75,7 +75,7 @@ export const Home = () => {
             Over 5,000 registered students
           </h6>
         </div>
-        <div className="col-md-5 offset-md-1 mt3">
+        <div className="col-md-5 offset-md-1">
           <img src={Img} alt="img" width="100%" />
         </div>
       </div>

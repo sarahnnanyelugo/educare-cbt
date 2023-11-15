@@ -27,7 +27,6 @@ import "./home.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Testimonials from "../Testimonial/Testimonials";
-import { SatelliteTwoTone } from "@material-ui/icons";
 
 export const Home = () => {
   return (
@@ -49,34 +48,22 @@ export const Home = () => {
             <button>Browse questions</button>
           </Link>
           <br />
-          <div className="flexy mt2 examlogos">
+          <div className="flexy">
             {" "}
-            <img src={Ielt} alt="img" width="54px" height="21px" className="" />
-            <img
-              src={Igcse}
-              alt="img"
-              width="30px"
-              height="35px"
-              className=""
-            />
-            <img src={Sat} alt="img" width="45px" height="35px" className="" />
-            <img src={Waec} alt="img" width="54px" height="42px" className="" />
-            <img
-              src={Toefl}
-              alt="img"
-              width="85px"
-              height="16px"
-              className=""
-            />
-            <img src={Jamb} alt="img" width="34px" height="32px" className="" />
+            <img src={Ielt} alt="image" width="54px" className="" />
+            <img src={Ielt} alt="image" width="54px" className="" />
+            <img src={Ielt} alt="image" width="54px" className="" />
+            <img src={Ielt} alt="image" width="54px" className="" />
+            <img src={Ielt} alt="image" width="54px" className="" />
+            <img src={Ielt} alt="image" width="54px" className="" />
           </div>
-          <img src={Users} alt="img" width="136px" className="mt1" />
+          <img src={Users} alt="image" width="136px" className="mt5" />
           <h6 style={{ fontFamily: "   font-family: rebondG-Bold" }}>
             Over 5,000 registered students
           </h6>
         </div>
-        <div className="col-md-5 offset-md-1 mt3">
-          <img src={Img} alt="img" width="100%" />
+        <div className="col-md-5 offset-md-1">
+          <img src={Img} alt="image" width="100%" />
         </div>
       </div>
       <center>

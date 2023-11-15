@@ -70,12 +70,12 @@ export const Home = () => {
             />
             <img src={Jamb} alt="img" width="34px" height="32px" className="" />
           </div>
-          <img src={Users} alt="img" width="136px" className="mt1" />
+          <img src={Users} alt="img" width="136px" className="mt5" />
           <h6 style={{ fontFamily: "   font-family: rebondG-Bold" }}>
             Over 5,000 registered students
           </h6>
         </div>
-        <div className="col-md-5 offset-md-1 mt3">
+        <div className="col-md-5 offset-md-1">
           <img src={Img} alt="img" width="100%" />
         </div>
       </div>
