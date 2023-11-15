@@ -69,7 +69,7 @@ export const Exams = ({ data }) => {
                 {user !== null && loggedIn === "1" ? (
                   <TestModal />
                 ) : (
-                  <Link to={"/authenticate"}>
+                  <Link to={"/login"}>
                     {" "}
                     <button>Practice</button>
                   </Link>
