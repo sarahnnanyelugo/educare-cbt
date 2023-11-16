@@ -4,6 +4,7 @@ import Logo from "../../assets/images/logo.png";
 import Menu from "../../assets/images/menu.svg";
 import Person from "../../assets/images/person.svg";
 import Bell from "../../assets/images/bell.svg";
+import Bell2 from "../../assets/images/bell2.svg";
 import { Link, NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -79,7 +80,7 @@ export const Navbar = () => {
             <button> Wallet</button>
           </NavLink>{" "}
         </div>
-        <div className="flexyM flexy">
+        <div className="flexyM flexy last-menu">
           <Dropdown>
             <Dropdown.Toggle align="start" id="dropdown-menu-align-start">
               <img className="  " src={Bell} alt="Scholar" />
@@ -94,9 +95,10 @@ export const Navbar = () => {
                   </div>
                   <hr />
                   <center>
+                    <img className="mt5  " src={Bell2} alt="Scholar" />
                     <p>
-                      No notifications yet Messages and alerts about your
-                      account will show up here.
+                      No notifications yet <br />
+                      Messages and alerts about your account will show up here.
                     </p>
                   </center>
                 </div>
@@ -112,7 +114,7 @@ export const Navbar = () => {
               </div>
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">
+              <Dropdown.Item href="/wallet">
                 <p>My Account</p>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-2" onClick={logoutSet} text-danger>
