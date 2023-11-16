@@ -61,7 +61,7 @@ export const Navbar = () => {
             <img className="   logo" src={Logo} alt="Scholar" />
           </Link>
         </div>
-        <div className="flexy navs">
+        <div className="flexy navs dn">
           <NavLink
             activeclassName="active"
             className="navlinks"
@@ -114,8 +114,43 @@ export const Navbar = () => {
               </div>
             </Dropdown.Toggle>
             <Dropdown.Menu>
+              <Dropdown.Item>
+                <div className="navs dnW">
+                  <NavLink
+                    activeclassName="active"
+                    className="navlinks"
+                    to={"/exam-list"}
+                  >
+                    <button> Home</button>
+                  </NavLink>{" "}
+                </div>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <div className="navs dnW">
+                  <NavLink
+                    activeclassName="active"
+                    className="navlinks"
+                    to={"/test-analysis"}
+                  >
+                    <button> Test Analysis</button>
+                  </NavLink>{" "}
+                </div>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <div className="navs dnW">
+                  {" "}
+                  <NavLink
+                    activeclassName="active"
+                    className="navlinks"
+                    to={"/wallet"}
+                  >
+                    <button> Wallet</button>
+                  </NavLink>{" "}
+                </div>
+              </Dropdown.Item>
+
               <Dropdown.Item href="/wallet">
-                <p>My Account</p>
+                <h6 style={{ fontSize: "14px" }}>My Account</h6>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-2" onClick={logoutSet} text-danger>
                 <p style={{ color: "#DE1E1E" }}> Sign out</p>

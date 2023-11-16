@@ -15,7 +15,7 @@
     img {
       width: 50%;
       @media screen and (max-width: 620px) {
-        width: 100%;
+        width: 50%;
       }
     }
   }
@@ -36,7 +36,7 @@
         font-family: rebondG-Medium;
         @media screen and (max-width: 620px) {
           margin: 0 0px;
-          padding: 2px 3px;
+          margin-left: -10px;
         }
       }
     }
@@ -104,7 +104,8 @@
     background: #fff !important;
     height: 35px !important;
     border-color: #fff !important;
-    width: 92px !important;
+    // width: 92px !important;
     top: 20px !important;
+    padding: 0 !important;
   }
 }
