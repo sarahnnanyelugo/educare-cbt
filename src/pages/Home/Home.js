@@ -41,8 +41,8 @@ export const Home = () => {
             performance.
           </p>
 
-          <Link to={"/exam-list"}>
-            <button>Browse questions</button>
+          <Link to={"/authenticate"}>
+            <button>Become a member</button>
           </Link>
           <br />
           <div className="flexy mt2 examlogos">
