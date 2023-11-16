@@ -7,6 +7,7 @@ import Bell from "../../assets/images/bell.svg";
 import { Link, NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import Dropdown from "react-bootstrap/Dropdown";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -79,12 +80,46 @@ export const Navbar = () => {
           </NavLink>{" "}
         </div>
         <div className="flexyM flexy">
-          {" "}
-          <img className="  " src={Bell} alt="Scholar" />
-          <div className="menu-holder" onClick={logoutSet}>
-            <img className="menu-icon" src={Menu} alt="Scholar" />
-            <img className="   person" src={Person} alt="Scholar" />
-          </div>
+          <Dropdown>
+            <Dropdown.Toggle align="start" id="dropdown-menu-align-start">
+              <img className="  " src={Bell} alt="Scholar" />
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">
+                <div className="col-md-2 notification-body">
+                  <div className="flexy flexyM">
+                    {" "}
+                    <h6>Notifications</h6>
+                    <small>Mark as read</small>
+                  </div>
+                  <hr />
+                  <center>
+                    <p>
+                      No notifications yet Messages and alerts about your
+                      account will show up here.
+                    </p>
+                  </center>
+                </div>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Dropdown>
+            <Dropdown.Toggle align="start" id="dropdown-menu-align-start">
+              <div className="menu-holder">
+                <img className="menu-icon" src={Menu} alt="Scholar" />
+                <img className="   person" src={Person} alt="Scholar" />
+              </div>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">
+                <p>My Account</p>
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-2" onClick={logoutSet} text-danger>
+                <p style={{ color: "#DE1E1E" }}> Sign out</p>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </div>
     </>
