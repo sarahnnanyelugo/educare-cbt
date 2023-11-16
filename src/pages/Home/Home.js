@@ -45,7 +45,7 @@ export const Home = () => {
             <button>Become a member</button>
           </Link>
           <br />
-          <div className="flexy mt2 examlogos">
+          <div className="flexy mt3 examlogos">
             {" "}
             <img src={Ielt} alt="img" width="54px" height="21px" className="" />
             <img
@@ -62,7 +62,7 @@ export const Home = () => {
               alt="img"
               width="85px"
               height="16px"
-              className=""
+              className="mt1"
             />
             <img src={Jamb} alt="img" width="34px" height="32px" className="" />
           </div>

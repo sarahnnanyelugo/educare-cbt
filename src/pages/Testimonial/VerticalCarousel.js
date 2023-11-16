@@ -135,8 +135,8 @@ class VerticalCarousel extends React.Component {
     if (showNavigation) {
       navigationButtons = (
         <NavigationButtons>
-          <NavBtn onClick={() => this.moveSlide(1)}>&#8593;</NavBtn>
-          <NavBtn onClick={() => this.moveSlide(-1)}>&#8595;</NavBtn>
+          {/* <NavBtn onClick={() => this.moveSlide(1)}>&#8593;</NavBtn>
+          <NavBtn onClick={() => this.moveSlide(-1)}>&#8595;</NavBtn> */}
         </NavigationButtons>
       );
     }

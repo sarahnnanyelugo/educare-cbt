@@ -25,7 +25,7 @@ const SlideCard = styled.div`
   transform-origin: 50% 50%;
   box-shadow: 0px 3px 6px #0000000d;
   border: 1px solid #e7e7e7;
-  border-radius: 10px;
+  border-radius: 20px;
   opacity: 1;
   @media screen and (min-width: 620px) {
     width: 520px;
