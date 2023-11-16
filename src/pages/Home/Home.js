@@ -273,9 +273,10 @@ export const Home = () => {
           <div className="col">
             <h1>01</h1>
             <div className="steps">
-              <h4>
-                Sign <span>Up</span>
-              </h4>
+              <h4>Sign Up</h4>
+              <center>
+                <span>ddddd</span>
+              </center>
               <p>
                 Join our platform by creating your account. It’s a quick
                 process, providing access to all questions.
@@ -285,9 +286,10 @@ export const Home = () => {
           <div className="col">
             <h1>02</h1>
             <div className="steps">
-              <h4>
-                Fund <span>your</span> Wallet
-              </h4>
+              <h4>Fund your Wallet</h4>
+              <center>
+                <span>ddddd</span>
+              </center>
               <p>
                 Add units securely to your wallet, enabling access to practice
                 tests and get detailed solutions.
@@ -297,9 +299,10 @@ export const Home = () => {
           <div className="col">
             <h1>03</h1>
             <div className="steps">
-              <h4>
-                Take <span>a </span> test
-              </h4>
+              <h4>Practice your test</h4>
+              <center>
+                <span>ddddd</span>
+              </center>
               <p>
                 Select a test, answer questions, and review with detailed
                 solutions to prepare for your exams.

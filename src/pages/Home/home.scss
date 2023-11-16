@@ -110,11 +110,11 @@
     border-radius: 10px;
 
     h4 {
-      margin-bottom: 20px;
-      span {
-        border-bottom: solid 1px #2f67d8;
-        margin-top: 10px !important;
-      }
+      // margin-bottom: 20px;
+    }
+    span {
+      border-top: solid 1px #2f67d8;
+      color: #fff;
     }
   }
 }
