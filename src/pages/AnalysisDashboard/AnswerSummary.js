@@ -24,18 +24,18 @@ export const AnswerSummary = ({ data }) => {
             </div>
             <div className="flexy flexyM">
               <h6 className="col-md-2 col-6">Mark Obtained:</h6>
-              <div
+              {/* <div
                 className="num"
                 style={{
                   background: bg,
                   color: "#fff",
                   border: "solid 1px grey",
-                  //   height: "30px",
-                  //   width: "36px",
+               
                 }}
               >
                 <small> {data.markObtained}</small>
-              </div>
+              </div> */}
+              <Badge cls="num" text={data.markObtained} />
             </div>
             <div className="flexy ">
               <h6 className="col-md-2">Answer Explanation:</h6>
@@ -55,23 +55,12 @@ export const AnswerSummary = ({ data }) => {
             </div>
             <div className="flexy flexyM">
               <h6 className="col-md-2 col-4"> Difficulty:</h6>
-              <div
-                className="num2"
-                style={{
-                  background: bg2,
-                  color: "#2F67D8",
-                  border: "solid 1px #2F67D8",
-                  //   height: "30px",
-                  //   width: "46px",
-                }}
-              >
-                <small> {data.difficulty}</small>
-              </div>
+              <Badge cls="level" text={data.difficulty} />
             </div>
           </div>
           <div className="offset-md-1">
             {" "}
-            <Badge text="Correct" cls="correct" />
+            <Badge text={data.status} cls="incorrect" />
           </div>
         </div>
         <hr />

@@ -1,6 +1,8 @@
 export const examSummary = [
   {
     questionNum: 1,
+    status: "Correct",
+
     question:
       "Which of the following gases contains the highest number of atoms at s.t.p?",
 
@@ -48,7 +50,8 @@ export const examSummary = [
       "Which of the following gases contains the highest number of atoms at s.p?",
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
-    markObtained: 1,
+    markObtained: 0,
+    status: "Unanswered",
     answerExplanation:
       "To determine the total number of atoms in each option, we’ll multiply the number of moles given by Avogadro’s number, which is 6.022×10236.022×1023 atoms/mole. However, for diatomic molecules like oxygen (O₂) and chlorine (Cl₂), and molecules like ethane (C₂H₆), we’ll need to consider the number of atoms in one molecule. ",
     difficulty: "easy",

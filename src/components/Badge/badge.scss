@@ -22,7 +22,26 @@
   color: #d52143 !important;
   border: solid 1px #d52143;
 }
+
 .unanswered {
   color: #4a13b2 !important;
   border: solid 1px #4a13b2;
+}
+
+.level {
+  color: #2f67d8 !important;
+  border: solid 1px #2f67d8;
+  background: #eaf0fb;
+}
+
+.num {
+  color: #fff !important;
+  border: solid 1px #000;
+  background: #5eaa42;
+}
+
+.zero {
+  color: #fff !important;
+  border: solid 1px #000;
+  background: #d64042;
 }
