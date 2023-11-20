@@ -3,6 +3,8 @@
   padding: 6px 13px !important;
   font-family: rebondG-Semi-Bold;
   font-size: 14px;
+  border: none;
+  background: #5eaa421a;
 }
 
 .badge::before {
@@ -11,4 +13,16 @@
   border-radius: 100%;
   background: red;
   content: "";
+}
+.correct {
+  color: #5eaa42 !important;
+  border: solid 1px #5eaa42;
+}
+.incorrect {
+  color: #d52143 !important;
+  border: solid 1px #d52143;
+}
+.unanswered {
+  color: #4a13b2 !important;
+  border: solid 1px #4a13b2;
 }

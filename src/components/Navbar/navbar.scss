@@ -92,6 +92,9 @@
   width: 320px;
   height: 271px;
   white-space: normal !important;
+  @media screen and (max-width: 620px) {
+    width: 200px;
+  }
   h6 {
     flex-grow: 1;
   }

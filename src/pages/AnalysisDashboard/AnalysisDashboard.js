@@ -166,24 +166,9 @@ export const AnalysisDashboard = () => {
             <div className={`panel ${checkActive(2, "active2")}`}>
               <div className="offset-md-9 badges">
                 <center>
-                  <Badge
-                    text="Correct"
-                    border="solid 1px #5EAA42"
-                    color="#5EAA42"
-                    background="#5EAA421A"
-                  />
-                  <Badge
-                    text="Incorrect"
-                    border="solid 1px #D52143"
-                    color="#D52143"
-                    background="#D521431A"
-                  />
-                  <Badge
-                    text="Unanswered"
-                    border="solid 1px #4A13B2"
-                    color="#4A13B2"
-                    background="#4A13B21A"
-                  />
+                  <Badge text="Correct" cls="correct" />
+                  <Badge text="Incorrect" cls="incorrect" />
+                  <Badge text="Unanswered" cls="unanswered" />
                 </center>
               </div>
               <div className=" questions-div2">

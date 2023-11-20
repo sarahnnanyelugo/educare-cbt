@@ -1,13 +1,5 @@
 import React from "react";
 import "./badge.scss";
-export const Badge = (props) => {
-  const { bg, color, border, text } = props;
-  return (
-    <button
-      style={{ background: bg, color: color, border: border }}
-      className="badge"
-    >
-      {text}
-    </button>
-  );
+export const Badge = ({ cls, text }) => {
+  return <button className={` badge ${cls}`}>{text}</button>;
 };

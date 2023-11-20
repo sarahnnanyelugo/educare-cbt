@@ -71,12 +71,7 @@ export const AnswerSummary = ({ data }) => {
           </div>
           <div className="offset-md-1">
             {" "}
-            <Badge
-              text="Correct"
-              color="#5EAA42"
-              background="#5EAA421A"
-              border="solid 1px #5EAA42"
-            />
+            <Badge text="Correct" cls="correct" />
           </div>
         </div>
         <hr />
