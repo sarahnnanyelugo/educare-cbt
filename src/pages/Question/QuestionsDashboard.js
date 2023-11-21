@@ -105,6 +105,13 @@ export const QuestionsDashboard = () => {
   };
 
   useEffect(() => {
+    const gt = parseInt(localStorage.getItem("go_to_question")) || 0;
+    if (gt > 0) setNewIndex(gt);
+    setTimeout(() => {
+      localStorage.removeItem("go_to_question");
+    }, 500);
+  }, []);
+  useEffect(() => {
     setLastQuestion(questionNumber === state.list.length - 1);
     setFirstQuestion(questionNumber === 0);
   }, [questionNumber]);

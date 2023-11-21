@@ -13,6 +13,9 @@ export const ReviewedQuestions = ({ data, setChecked, answer }) => {
   useEffect(() => {
     setNumId(data.id);
   });
+  const setQuestionDataID = (event) => {
+    localStorage.setItem("go_to_question", data.id);
+  };
   useEffect(() => {
     if (!data.options) {
       return;
@@ -81,7 +84,7 @@ export const ReviewedQuestions = ({ data, setChecked, answer }) => {
           })}
         </div>
         <div className="mt offset-md-1 ">
-          <Link to={"/questions-dashboard"} state={{ id: numId }}>
+          <Link to={"/questions-dashboard"} onClick={setQuestionDataID}>
             {" "}
             <Badge text="Go to question" cls="plain" />
           </Link>
