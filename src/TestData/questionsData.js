@@ -687,7 +687,7 @@ export const questions = [
     question:
       "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
 
-    ooptions: [
+    options: [
       {
         label: "A",
         text: "Sodium hydroxide",

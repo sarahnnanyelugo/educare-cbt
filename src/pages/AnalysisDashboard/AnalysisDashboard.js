@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Badge } from "../../components/Badge/Badge";

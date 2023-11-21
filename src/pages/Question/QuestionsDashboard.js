@@ -125,6 +125,9 @@ export const QuestionsDashboard = () => {
       }
     }
   };
+  const resetAnswers = () => {
+    localStorage.removeItem("myArray");
+  };
   return (
     <>
       <div className="test-instructions-div22">
@@ -246,7 +249,7 @@ export const QuestionsDashboard = () => {
                       style={{ marginTop: "40px" }}
                     >
                       {" "}
-                      <button className="reset-btn ">
+                      <button className="reset-btn " onClick={resetAnswers}>
                         Reset question
                       </button>{" "}
                       <Link to={"/review-page"}>

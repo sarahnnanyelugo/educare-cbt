@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 export const TestInstructions = () => {
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
 
+  const resetAnswers = () => {
+    localStorage.removeItem("myArray");
+  };
   return (
     <div className="test-instructions-div">
       <div className="col-md-8 offset-md-2 T-instructions">
@@ -69,7 +72,7 @@ export const TestInstructions = () => {
                 {" "}
                 <button className="back-btn">Go back</button>
               </Link>{" "}
-              <Link to={"/questions-dashboard"}>
+              <Link to={"/questions-dashboard"} onClick={resetAnswers}>
                 {" "}
                 <button className="proceed-btn">Proceed</button>
               </Link>

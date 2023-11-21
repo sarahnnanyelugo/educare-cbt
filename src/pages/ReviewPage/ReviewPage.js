@@ -4,18 +4,20 @@ import { questions } from "../../TestData";
 import "./review.scss";
 import { ReviewedQuestions } from "./ReviewedQuestions/Questions";
 export const ReviewPage = () => {
-  const [questionNumber, setQuestionNumber] = useState(6);
-  const [countdown, setCountdown] = useState(30 * 60); // 30 minutes in seconds
+  // const [questionNumber, setQuestionNumber] = useState(6);
+  // const [activeIndex2, setActiveIndex2] = useState(1);
+  // const handleClick = (index) => setActiveIndex2(index);
+  // const checkActive = (index, className) =>
+  //   activeIndex2 === index ? className : "";
+  const [countdown, setCountdown] = useState(30 * 60);
   const setChecked = (id, index) => {
     console.log(id, index);
     if (id !== null) {
       const ind = state.list.findIndex((item) => item.id === id);
       if (ind != -1) {
-        // Update the selected property of the object at index `ind`
-        const updatedList = [...state.list]; // Create a copy of the original array
+        const updatedList = [...state.list];
         updatedList[ind].selected = index;
 
-        // Update the state with the modified array
         setState({ list: updatedList });
       }
     }
@@ -44,7 +46,12 @@ export const ReviewPage = () => {
   const [state, setState] = useState({
     query: "",
     list: questions,
+    answers: JSON.parse(localStorage.getItem("myArray")) || [],
   });
+  function getAnswer(id) {
+    const index = state.answers?.find((item) => item.id === id);
+    return index?.value || null;
+  }
   return (
     <>
       <div className="test-instructions-div">
@@ -73,10 +80,14 @@ export const ReviewPage = () => {
         </div>
         <div className="col-md-8 offset-md-2 review-board">
           <div className="row ">
-            <ReviewedQuestions
-              data={state.list[questionNumber]}
-              setChecked={setChecked}
-            />
+            {state.list.map((data, index) => (
+              <ReviewedQuestions
+                data={data}
+                key={index}
+                answer={() => getAnswer(data.id)}
+                setChecked={setChecked}
+              />
+            ))}
           </div>
         </div>
       </div>
