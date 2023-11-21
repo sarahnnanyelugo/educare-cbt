@@ -40,13 +40,13 @@ export const questions = [
         text: "Sodium hydroxide",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "Hydrochloric acid", correct_answer: false },
       {
         label: "C",
         text: "Ethylene",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "Ammonia", correct_answer: true },
     ],
 
     yourAnswer: "6 moles of neon",

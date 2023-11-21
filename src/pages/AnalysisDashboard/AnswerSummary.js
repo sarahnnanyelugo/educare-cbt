@@ -1,9 +1,33 @@
 // import { blueGrey } from "@material-ui/core/colors";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Badge } from "../../components/Badge/Badge";
 
-export const AnswerSummary = ({ data }) => {
+export const AnswerSummary = ({ data, answer }) => {
+  const [correctAnswer, setCorrectAnswer] = useState(null);
+  const [yourAnswer, setYourAnswer] = useState(null);
+  const [isCorrect, setIsCorrect] = useState(null);
+  useEffect(() => {
+    if (!data.options) {
+      return;
+    }
+    const correct = data.options?.findIndex(
+      (answer) => answer?.correct_answer === true
+    );
+    const answerd = answer();
+    console.log(answerd);
+    if (answerd == undefined || answerd == null) setIsCorrect(null);
+    else {
+      if (answerd === correct) setIsCorrect(true);
+      else setIsCorrect(false);
+    }
+    setCorrectAnswer(data.options[correct]);
+    setYourAnswer(data.options[answerd]);
+  }, []);
+
+  useEffect(() => {
+    console.log(yourAnswer);
+  }, [yourAnswer]);
   return (
     <div className="flexy summary-div2">
       <div className="col-md-12">
@@ -15,16 +39,19 @@ export const AnswerSummary = ({ data }) => {
             <p>{data.question}</p>
             <div className="flexy flexyM">
               <h6 className="col-md-2 col-6">Your Answer:</h6>
-              <p>{data.yourAnswer}</p>
+              <p>{yourAnswer?.text}</p>
             </div>{" "}
             <div className="flexy flexyM">
               <h6 className="col-md-2 col-6">Correct Answer:</h6>
-              <p>{data.correctAnswer}</p>
+              <p>{correctAnswer?.text}</p>
             </div>
             <div className="flexy flexyM">
               <h6 className="col-md-2 col-6">Mark Obtained:</h6>
 
-              <Badge cls="num" text={data.markObtained} />
+              <Badge
+                cls={isCorrect ? "num" : "zero"}
+                text={isCorrect ? data.markObtained : 0}
+              />
             </div>
             <div className="flexy ">
               <h6 className="col-md-2">Answer Explanation:</h6>
@@ -49,7 +76,22 @@ export const AnswerSummary = ({ data }) => {
           </div>
           <div className="offset-md-1">
             {" "}
-            <Badge text={data.status} cls="incorrect" />
+            <Badge
+              text={
+                isCorrect === null
+                  ? "UnAnswered"
+                  : isCorrect
+                  ? "Correct"
+                  : "Incorrect"
+              }
+              cls={
+                isCorrect === null
+                  ? "unanswered"
+                  : isCorrect
+                  ? "correct"
+                  : "incorrect"
+              }
+            />
           </div>
         </div>
         <hr />

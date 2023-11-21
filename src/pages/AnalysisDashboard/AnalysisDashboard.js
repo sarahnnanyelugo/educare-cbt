@@ -18,7 +18,12 @@ export const AnalysisDashboard = () => {
   const [state, setState] = useState({
     query: "",
     list: questions,
+    answers: JSON.parse(localStorage.getItem("myArray")) || [],
   });
+  function getAnswer(id) {
+    const index = state.answers?.find((item) => item.id === id);
+    return index?.value || null;
+  }
   return (
     <>
       <Navbar />
@@ -174,7 +179,11 @@ export const AnalysisDashboard = () => {
               <div className=" questions-div2">
                 <div className="row ">
                   {state.list.map((data, index) => (
-                    <AnswerSummary data={data} key={index} />
+                    <AnswerSummary
+                      data={data}
+                      key={index}
+                      answer={() => getAnswer(data.id)}
+                    />
                   ))}
                 </div>
               </div>
