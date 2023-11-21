@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Badge } from "../../components/Badge/Badge";
 import { Navbar } from "../../components/Navbar/Navbar";
-import { examSummary } from "../../TestData";
+import { examSummary, questions } from "../../TestData";
 import "./analysis-dashboard.scss";
 import { AnswerSummary } from "./AnswerSummary";
 import QuestionChart from "./QuestionChart.js/QuestionChart";
@@ -17,7 +17,7 @@ export const AnalysisDashboard = () => {
     activeIndex2 === index ? className : "";
   const [state, setState] = useState({
     query: "",
-    list: examSummary,
+    list: questions,
   });
   return (
     <>
@@ -174,7 +174,7 @@ export const AnalysisDashboard = () => {
               <div className=" questions-div2">
                 <div className="row ">
                   {state.list.map((data, index) => (
-                    <AnswerSummary data={data} />
+                    <AnswerSummary data={data} key={index} />
                   ))}
                 </div>
               </div>

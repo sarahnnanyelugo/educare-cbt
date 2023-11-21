@@ -44,6 +44,47 @@ export const QuestionsDashboard = () => {
   const [lastQuestion, setLastQuestion] = useState(false);
   const [firstQuestion, setFirstQuestion] = useState(true);
   const [questionNumber, setQuestionNumber] = useState(0);
+  const [myArray, setMyArray] = useState([]);
+
+  // useEffect(() => {
+  //   // Get the existing data from local storage
+  //   const storedArray = JSON.parse(localStorage.getItem("myArray"));
+
+  //   // If there is existing data, update the state with it
+  //   if (storedArray) {
+  //     setMyArray(storedArray);
+  //   } else {
+  //     // If the array doesn't exist, initialize it and store in local storage
+  //     const initialArray = [];
+  //     setMyArray(initialArray);
+  //     localStorage.setItem("myArray", JSON.stringify(initialArray));
+  //   }
+  // }, []);
+
+  const updateLocalStorage = ({ newKey, newValue }) => {
+    // Example: new key-value pair
+    // const newKey = "newKey";
+    // const newValue = "newValue";
+
+    let updatedArray = myArray;
+
+    // Check if the key already exists in the array
+    const existingIndex = updatedArray.find((item) => item.id === newKey);
+    console.log("existingIndex", existingIndex);
+
+    if (existingIndex) {
+      // If the key exists, update its value
+      existingIndex.value = newValue;
+      setMyArray(updatedArray);
+      localStorage.setItem("myArray", JSON.stringify(updatedArray));
+    } else {
+      // If the key doesn't exist, add the new key-value pair to the array
+      const newArray = [...myArray, { id: newKey, value: newValue }];
+      setMyArray(newArray);
+      localStorage.setItem("myArray", JSON.stringify(newArray));
+    }
+  };
+
   const getQuestionBg = (index) => {
     const lst = state.list[index];
     if (index > questionNumber)
@@ -69,12 +110,15 @@ export const QuestionsDashboard = () => {
   }, [questionNumber]);
   const setChecked = (id, index) => {
     console.log(id, index);
+    const payload = { newKey: id, newValue: parseInt(index) };
+    updateLocalStorage(payload);
+
     if (id !== null) {
       const ind = state.list.findIndex((item) => item.id === id);
       if (ind != -1) {
         // Update the selected property of the object at index `ind`
         const updatedList = [...state.list]; // Create a copy of the original array
-        updatedList[ind].selected = index;
+        updatedList[ind].selected = parseInt(index);
 
         // Update the state with the modified array
         setState({ list: updatedList });

@@ -4,7 +4,6 @@ import { Col, Row } from "react-bootstrap";
 import { Badge } from "../../components/Badge/Badge";
 
 export const AnswerSummary = ({ data }) => {
-  const { bg, bg2 } = data;
   return (
     <div className="flexy summary-div2">
       <div className="col-md-12">
@@ -24,24 +23,14 @@ export const AnswerSummary = ({ data }) => {
             </div>
             <div className="flexy flexyM">
               <h6 className="col-md-2 col-6">Mark Obtained:</h6>
-              {/* <div
-                className="num"
-                style={{
-                  background: bg,
-                  color: "#fff",
-                  border: "solid 1px grey",
-               
-                }}
-              >
-                <small> {data.markObtained}</small>
-              </div> */}
+
               <Badge cls="num" text={data.markObtained} />
             </div>
             <div className="flexy ">
               <h6 className="col-md-2">Answer Explanation:</h6>
               <div>
                 <p>{data.answerExplanation}</p>
-                {data.options.map((item, index) => {
+                {data.options?.map((item, index) => {
                   return (
                     <div>
                       <label for="answer-a">
