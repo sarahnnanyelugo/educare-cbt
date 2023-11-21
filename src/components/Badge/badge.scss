@@ -7,25 +7,54 @@
   background: #5eaa421a;
 }
 
-.badge::before {
-  height: 15px;
-  width: 15px;
-  border-radius: 100%;
-  background: red;
-  content: "";
-}
 .correct {
   color: #5eaa42 !important;
   border: solid 1px #5eaa42;
+  background: #5eaa421a;
+  &::before {
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 100%;
+    color: #5eaa42;
+    background-color: #5eaa42;
+    content: "@";
+    height: 0;
+    padding: 0;
+    margin-right: 10px;
+  }
 }
 .incorrect {
   color: #d52143 !important;
   border: solid 1px #d52143;
+  background: #d521431a;
+  &::before {
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 100%;
+    color: #d52143;
+    background-color: #d52143;
+    content: "@";
+    height: 0;
+    padding: 0;
+    margin-right: 10px;
+  }
 }
 
 .unanswered {
   color: #4a13b2 !important;
   border: solid 1px #4a13b2;
+  background: #4a13b21a;
+  &::before {
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 100%;
+    color: #4a13b2;
+    background-color: #4a13b2;
+    content: "@";
+    height: 0;
+    padding: 0;
+    margin-right: 10px;
+  }
 }
 
 .level {

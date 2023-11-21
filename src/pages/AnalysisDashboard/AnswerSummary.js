@@ -79,7 +79,7 @@ export const AnswerSummary = ({ data, answer }) => {
             <Badge
               text={
                 isCorrect === null
-                  ? "UnAnswered"
+                  ? "Unanswered"
                   : isCorrect
                   ? "Correct"
                   : "Incorrect"
