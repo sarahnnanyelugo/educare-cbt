@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import "./submit-modal.scss";
 import Time from "../../assets/images/time.svg";
@@ -6,14 +6,23 @@ import Question from "../../assets/images/question.svg";
 import Tick from "../../assets/images/tick.svg";
 import Play from "../../assets/images/play.svg";
 import { Link } from "react-router-dom";
+import { questions } from "../../TestData";
 export const SubmitModal = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [myArray, setmyArray] = useState(
-    JSON.parse(localStorage.getItem("myArray"))
-  );
+  const [attempted, setAttempted] = useState(0);
+  const [unattempted, setUnattempted] = useState(0);
+  const [totalQuestions, setTotalQuestions] = useState(0);
+  useEffect(() => {
+    const myArray = JSON.parse(localStorage.getItem("myArray")) || [];
+    setTotalQuestions(questions.length);
+    setAttempted(myArray.length);
+  }, []);
+  useEffect(() => {
+    setUnattempted(totalQuestions - attempted);
+  }, [attempted, totalQuestions]);
 
   return (
     <>
@@ -41,11 +50,11 @@ export const SubmitModal = () => {
                 {" "}
                 <div className="col-md-6">
                   <h6>Attempted Questions</h6>
-                  <p>{myArray.lenght}</p>
+                  <p>{attempted}</p>
                 </div>
                 <div className="">
                   <h6>Unattempted Questions</h6>
-                  <p>{myArray - myArray.lenght}</p>
+                  <p>{unattempted}</p>
                 </div>
               </div>
               <Modal.Footer>
