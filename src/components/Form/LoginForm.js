@@ -9,7 +9,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { SuccessModal } from "./SuccessModal";
 function LoginForm(props) {
-  const [modalOpen, setModalOpen] = useState(false);
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
   //   const [login, setLogin] = useState("show");
 

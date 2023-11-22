@@ -1,3 +1,6 @@
+@import "../../variables";
+@import "../../shared-styles";
+
 .acc-card {
   box-shadow: 0px 3px 6px #0000000d;
   border: 1px solid #e7e7e7;
@@ -5,6 +8,22 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   margin-bottom: 80px;
+  .form-btns {
+    // float: right;
+  }
+  .save-btn {
+    @include main-btn;
+  }
+  .cancel-btn {
+    background: #fff !important;
+    color: #2f67d8;
+    border-radius: 100px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border: solid 1px #2f67d8;
+    font-family: rebondG-Semi-Bold;
+  }
   .form {
     width: 100%;
     position: relative;
@@ -69,4 +88,18 @@
   .form input:valid + .label-name::after {
     transform: translateX(0%);
   }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.change-password {
+  cursor: pointer;
+  color: #2f67d8;
+  font-size: 12px;
+  text-decoration: underline;
+  margin-left: 20px;
+  margin-top: 20px;
 }
