@@ -22,8 +22,8 @@ export const Password = (props) => {
         name="password"
         autocomplete="new-password"
         required
-        value={password}
-        onChange={handlePasswordChange}
+        // value="password"
+        // onChange={handlePasswordChange}
       />
       <label for="text" class="label-name">
         <span class="content-name">{props.placeholder}</span>

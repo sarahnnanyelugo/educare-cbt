@@ -11,6 +11,9 @@ export const SubmitModal = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [myArray, setmyArray] = useState(
+    JSON.parse(localStorage.getItem("myArray"))
+  );
 
   return (
     <>
@@ -38,11 +41,11 @@ export const SubmitModal = () => {
                 {" "}
                 <div className="col-md-6">
                   <h6>Attempted Questions</h6>
-                  <p>35</p>
+                  <p>{myArray.lenght}</p>
                 </div>
                 <div className="">
                   <h6>Unattempted Questions</h6>
-                  <p>15</p>
+                  <p>{myArray - myArray.lenght}</p>
                 </div>
               </div>
               <Modal.Footer>
