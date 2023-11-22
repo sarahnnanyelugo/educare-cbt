@@ -11,6 +11,11 @@ export const MyAccount = () => {
   const handleClick = (index) => setActiveIndex2(index);
   const [newPassword, setNewPassword] = useState("hide");
   //   const [unsetPassword, setUnsetPassword] = useState("");
+
+  const [form, setForm] = useState({
+    email: " ",
+    password: " ",
+  });
   const checkActive = (index, className) =>
     activeIndex2 === index ? className : "";
   function changePassword() {
@@ -18,6 +23,14 @@ export const MyAccount = () => {
   }
   function unsetPassword() {
     setNewPassword("hide");
+  }
+  function handleChange(e) {
+    console.log(e.target.name, e.target.value);
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+    console.log(form);
   }
   return (
     <>
@@ -108,16 +121,19 @@ export const MyAccount = () => {
                       placeholder="Password"
                       name="password"
                       type="password"
+                      onChange={handleChange}
                     />
                     <div className={`${newPassword}`}>
                       <Password
                         placeholder="New Password"
                         name="password"
                         type="password"
+                        onChange={handleChange}
                       />
                       <Password
                         placeholder="Confirm Password"
                         name="password"
+                        onChange={handleChange}
                         type="password"
                       />
                     </div>
