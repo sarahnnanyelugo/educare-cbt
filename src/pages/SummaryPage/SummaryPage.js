@@ -45,7 +45,7 @@ export const SummaryPage = () => {
               {" "}
               <center>
                 {" "}
-                <Link to={"/home"}>
+                <Link to={"/"}>
                   {" "}
                   <button className="return-btn mt3">
                     Return to Main Windows

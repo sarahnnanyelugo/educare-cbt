@@ -16,6 +16,7 @@ import { AnalysisDashboard } from "./pages/AnalysisDashboard/AnalysisDashboard";
 import { Home } from "./pages/Home/Home";
 import { LoginPage } from "./pages/LoginPage.js/LoginPage";
 import { AnswerSummary } from "./pages/AnalysisDashboard/AnswerSummary";
+import { MyAccount } from "./pages/MyAccount/MyAccount";
 function App() {
   return (
     <>
@@ -34,6 +35,7 @@ function App() {
         <Route path="login" element={<LoginPage />} />{" "}
         <Route path="authenticate" element={<AuthenticationPage />} />{" "}
         <Route path="answer-summary" element={<AnswerSummary />} />{" "}
+        <Route path="my-account" element={<MyAccount />} />{" "}
       </Routes>
     </>
   );

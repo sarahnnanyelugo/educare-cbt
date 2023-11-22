@@ -149,7 +149,7 @@ export const Navbar = () => {
                 </div>
               </Dropdown.Item>
 
-              <Dropdown.Item href="/wallet">
+              <Dropdown.Item href="/my-account">
                 <h6 style={{ fontSize: "14px" }}>My Account</h6>
               </Dropdown.Item>
               <Dropdown.Item href="#/action-2" onClick={logoutSet} text-danger>
