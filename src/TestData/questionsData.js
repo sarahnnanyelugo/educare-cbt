@@ -1,22 +1,24 @@
 export const questions = [
   {
     questionNum: 1,
+    comprehension:
+      "In the questions below, choose the word(s) or phrase which best fills the gap(s) ",
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      " Jubril found that thieves had entered his house in his absence. He went to the police to report the…",
 
     options: [
       {
         label: "A",
-        text: "Increase in screening effect",
+        text: "​break out",
         correct_answer: false,
       },
-      { label: "B", text: "Increase in nuclear charge", correct_answer: true },
+      { label: "B", text: "break up", correct_answer: false },
       {
         label: "C",
-        text: "Decrease in screening effect",
-        correct_answer: false,
+        text: "break in",
+        correct_answer: true,
       },
-      { label: "D", text: "Decrease in nuclear charge", correct_answer: false },
+      { label: "D", text: "break into", correct_answer: false },
     ],
     id: 1,
 
@@ -33,20 +35,24 @@ export const questions = [
   {
     questionNum: 2,
     question:
-      "Which of the following substances is an example of a fine chemical",
+      "After the accused was found guilty by the court, his counsel… before sentence was passed",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​begged for mercy",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: false },
+      {
+        label: "B",
+        text: "made a plea for mitigation ",
+        correct_answer: true,
+      },
       {
         label: "C",
-        text: "Ethylene",
+        text: "made an ovation",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: true },
+      { label: "D", text: "made a plea for litigation", correct_answer: false },
     ],
 
     yourAnswer: "6 moles of neon",
@@ -63,21 +69,21 @@ export const questions = [
   {
     questionNum: 3,
     question:
-      " The IUPAC name of the compound represented by the structure below is ?",
+      " Four persons accused of currency … are being held by the security agents.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​trafficking",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "traviking", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "trafficking",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "traffiking", correct_answer: false },
     ],
 
     yourAnswer: "6 moles of neon",
@@ -93,21 +99,21 @@ export const questions = [
   },
   {
     questionNum: 4,
-    question: "Which or the following substances is a polypeptide?",
+    question: "Gone are the days when he… enjoy patronage.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "would",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "will", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "used",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​could", correct_answer: false },
     ],
     id: 4,
 
@@ -123,22 +129,21 @@ export const questions = [
   },
   {
     questionNum: 5,
-    question:
-      "Which or the following products could be formed during incomplete combustion of a hydrocarbon. i.Carbon ii. Hydrogen III. Carbon (Il) oxide",
+    question: "He did not attend the final burial …",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "rite",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "rights", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "rites",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "right", correct_answer: false },
     ],
 
     yourAnswer: "6 moles of neon",
@@ -154,21 +159,20 @@ export const questions = [
   },
   {
     questionNum: 6,
-    question:
-      "What quantity of electrons is lost when one mole of iron (II) ions is oxidized to iron (III) ?",
+    question: "The officer was compelled to… the suspect’s car.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "seize",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "cease", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "sieze",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​sease", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -184,21 +188,21 @@ export const questions = [
   {
     questionNum: 7,
     question:
-      "What is the mass of silver deposited when 24,125 C of electricity is passed through a solution or silver salt. [Ag = 108, IF = 96,500 C ]",
+      "A number of doctors are not so well disposed to … in government hospitals these days, … they?",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "working/do",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "work/are", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "working/are",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "work/aren’t", correct_answer: false },
     ],
     id: 7,
 
@@ -214,21 +218,20 @@ export const questions = [
   },
   {
     questionNum: 8,
-    question:
-      " Equal masses of calcium trioxocarbonate(iv) were added to dilute hydrochloric acid at the temperature specified. Under which of the following conditions would the reaction be slowest?",
+    question: "If you are going to the market, may I… please?",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "follow you",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "come with you", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "come by you",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "come as your second", correct_answer: false },
     ],
 
     yourAnswer: "6 moles of neon",
@@ -245,20 +248,20 @@ export const questions = [
   },
   {
     questionNum: 9,
-    question: "The high solubility of ethanol in water is due to?",
+    question: "Wada said that two of his chickens … eggs yesterday morning.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "​layed",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "lied", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​laid",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​lain", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -273,21 +276,20 @@ export const questions = [
   },
   {
     questionNum: 10,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "Thank you for the party, we really…",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "enjoyed ourselves",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "enjoyed", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "enjoyed very much",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "enjoyed too much.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -302,21 +304,23 @@ export const questions = [
   },
   {
     questionNum: 11,
+    comprehension:
+      "In questions below, choose the option nearest in meaning to the word(s) or phrase underlined,   ",
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The culprits will surrender their loot to the customs officials.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​give away",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "give out", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "give in",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "give up.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -331,22 +335,21 @@ export const questions = [
   },
   {
     questionNum: 12,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "​The discussion became animated.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "specialized",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "lively", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​intellectual",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "unruly", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -361,22 +364,21 @@ export const questions = [
   },
   {
     questionNum: 13,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "Rich citizens are often niggardly in their ways",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "beggarly",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "sordid", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "miserly",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "pompous", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -391,22 +393,21 @@ export const questions = [
   },
   {
     questionNum: 14,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "The musician’s popularity is beginning to decline.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "change",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "wane", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "slide",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "disappear", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -421,21 +422,20 @@ export const questions = [
   },
   {
     questionNum: 15,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "Olu promised to look out for her next time he is in town",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "watch for",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "visit", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "greet",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "take care of", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -450,21 +450,24 @@ export const questions = [
   },
   {
     questionNum: 16,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "Finally, I assured him that I would not go back on my word.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "return to a place",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      {
+        label: "B",
+        text: "return to a certain word when reading",
+        correct_answer: false,
+      },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​re-use my word",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "fail to keep my promise ", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -480,20 +483,28 @@ export const questions = [
   {
     questionNum: 17,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The speaker took his audience down memory lane before he went to the topic of his lecture.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "took his audience on a journey through a street called Memory Lane",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      {
+        label: "B",
+        text: "recalled events from the past ",
+        correct_answer: true,
+      },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​told a tale about a place called Memory Lane",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      {
+        label: "D",
+        text: "gave an outline of his lecture",
+        correct_answer: false,
+      },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -508,22 +519,23 @@ export const questions = [
   },
   {
     questionNum: 18,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    comprehension:
+      "Choose the option that has the same vowel sound as the one represented by the letters underlined,  ",
+    question: " faeces",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​polices",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​pain", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "peasant",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "pear", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -538,21 +550,20 @@ export const questions = [
   },
   {
     questionNum: 19,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "pot",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "port",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "word", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "correct",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​what", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -567,21 +578,20 @@ export const questions = [
   },
   {
     questionNum: 20,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "leopard",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "geology",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "people", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​leaven",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "led (Noun)", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -596,21 +606,22 @@ export const questions = [
   },
   {
     questionNum: 21,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    comprehension:
+      "Select the word that has the same pattern of stress as the given word,  ",
+    question: "EDUCATION",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "duplicity",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​conjectural", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "economics",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "elaborate", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -625,21 +636,20 @@ export const questions = [
   },
   {
     questionNum: 22,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "HONOUR",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​human",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "hyena", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​humane",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "hotel ", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -655,21 +665,21 @@ export const questions = [
   {
     questionNum: 23,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "Identify the word that has a different stress pattern from the others.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "discourse",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​intimate", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "accelerate",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "integral", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -684,22 +694,21 @@ export const questions = [
   },
   {
     questionNum: 24,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "Identify the word that has the stress on the second syllable.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​always",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "result ", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​reproduce",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "understand", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -714,21 +723,23 @@ export const questions = [
   },
   {
     questionNum: 25,
+    comprehension:
+      "Choose the options opposite in meaning to the word(s) or phrase in italics. ",
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "Common sense requires that one should be decorous at formal gatherings.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "courteous",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "careful", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "impolite ",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "incurious", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -743,21 +754,20 @@ export const questions = [
   },
   {
     questionNum: 26,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "The string was taut",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​stretched",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "loose ", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​firm",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "tight", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -773,20 +783,20 @@ export const questions = [
   {
     questionNum: 27,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The diminutive figure bounces over the track with unfathomable lightness",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "irresistible",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "predictable ", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "invigorating",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​impressive.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -802,20 +812,20 @@ export const questions = [
   {
     questionNum: 28,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The teacher announced that the class would be making a fleeting visit to the Zoo.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "​long",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "routine", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "brief",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "guided", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -830,22 +840,21 @@ export const questions = [
   },
   {
     questionNum: 29,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "We intend to make the reception a diurnal event",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "an annual",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "a weekly", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "a nightly ",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "a short.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -860,22 +869,21 @@ export const questions = [
   },
   {
     questionNum: 30,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "​The project is designed to alleviate poverty in the country.",
 
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "exacerbate",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "assuage", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​eradicate",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "tackle.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -890,21 +898,20 @@ export const questions = [
   },
   {
     questionNum: 31,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "The permanent Secretary left his job under a cloud",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "with a clear record",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "on a sunny day", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​in disgrace",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​on a cloudy clay.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -919,21 +926,20 @@ export const questions = [
   },
   {
     questionNum: 32,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "It is surprising that this politician has now turned renegade",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "militant",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "loyal", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "quiet",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "corrupt.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -949,20 +955,20 @@ export const questions = [
   {
     questionNum: 33,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "Hypertension is a debilitating disease that everyone should prevent.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "a horrible",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "an enervating", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "a mortal",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "an energizing", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -978,20 +984,20 @@ export const questions = [
   {
     questionNum: 34,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The striking workers have vowed not to return to work until the decision is rescinded",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "​implemented ",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "changed", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "dismissed",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "incorporated", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1006,21 +1012,20 @@ export const questions = [
   },
   {
     questionNum: 35,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "It is rare for a leader and his deputy to see eye to eye.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "reproach each other",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​disagree", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "be of one mind",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "respect each other.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1035,21 +1040,27 @@ export const questions = [
   },
   {
     questionNum: 36,
+    comprehension:
+      "Choose the option nearest in meaning to the word(s) or phrase in italics. ",
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      " The man was able to persuade his wilful and obstinate daughter to follow the career he chose for her",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​intelligent but arrogant",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      {
+        label: "B",
+        text: "hardworking and intelligent",
+        correct_answer: false,
+      },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "unyielding and obdurate",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "​obscure and odious.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1064,21 +1075,20 @@ export const questions = [
   },
   {
     questionNum: 37,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "That punch by the young boxer proved to be fatal.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "effective",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​belated", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "hard",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "deadly ", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1094,20 +1104,20 @@ export const questions = [
   {
     questionNum: 38,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "​The boy was told that lie would need several more pints of blood if he was to survive.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "plenty",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​much ", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "many",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "some", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1123,20 +1133,20 @@ export const questions = [
   {
     questionNum: 39,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "In spite of her grim situation, the young widow smiled dutifully at the visitor’s pleasantries",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "unkind comments",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "sad stories", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​condolence messages",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "jocular remarks", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1152,20 +1162,20 @@ export const questions = [
   {
     questionNum: 40,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The presence of the security men in the area will provide a moment of respite for the residents.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​enduring reprieve",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "temporary relief", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "lasting security",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "soothing relaxation.", correct_answer: false },
     ],
     id: 40,
 
@@ -1182,20 +1192,20 @@ export const questions = [
   {
     questionNum: 41,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "Though David’s condition is serious, his life is not in immediate danger.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "grave",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "nasty", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "dangerous",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "hypertensive", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1210,21 +1220,20 @@ export const questions = [
   },
   {
     questionNum: 42,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "The essay topic is nebulous.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​clear",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​incorrect", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
-        correct_answer: false,
+        text: "vague",
+        correct_answer: true,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "distinct", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1240,20 +1249,20 @@ export const questions = [
   {
     questionNum: 43,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "I have always believed that my mother is very impassioned woman.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "impartial",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "emotional", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​Impassive",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "emotive.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1268,21 +1277,20 @@ export const questions = [
   },
   {
     questionNum: 44,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "My father was at the apogee of his career when he was retired",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "terminal point",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "​least productive stage", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "redundant stage",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "highest poin", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1298,20 +1306,20 @@ export const questions = [
   {
     questionNum: 45,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The party’s gathering was thrown into a state of euphoria after the election result was announced.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "pleasure",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "confusion", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "sadness",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "excitement ", correct_answer: true },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1326,21 +1334,30 @@ export const questions = [
   },
   {
     questionNum: 46,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    comprehension:
+      "Select the option that best explains the information conveyed in the sentence. ",
+    question: "The politician’s inflammatory remarks were heavily criticized",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "​The politician’s provocative remarks were heavily criticized ",
+        correct_answer: true,
+      },
+      {
+        label: "B",
+        text: "The politician’s tribalistic remarks were heavily criticized",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "The politician’s bombastic remarks were heavily criticized",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      {
+        label: "D",
+        text: "The politician’s rude remarks were heavily criticized",
+        correct_answer: false,
+      },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1356,20 +1373,20 @@ export const questions = [
   {
     questionNum: 47,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "The events of last Friday show that there is no love lost between the Principal and the Vice- Principal.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
-        correct_answer: false,
+        text: "They dislike each other ",
+        correct_answer: true,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "They like each other", correct_answer: false },
       {
         label: "C",
-        text: "Ethylene",
+        text: "They cannot part company",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "They work independently.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1385,20 +1402,28 @@ export const questions = [
   {
     questionNum: 48,
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "Though he is our elected representative, he often takes a rather jaundiced view of our problems.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "He takes a rather hazy view of our problems",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      {
+        label: "B",
+        text: "He takes a sickly view of our problems",
+        correct_answer: false,
+      },
       {
         label: "C",
-        text: "Ethylene",
+        text: "He takes an unfavourable position concerning our problems ",
+        correct_answer: true,
+      },
+      {
+        label: "D",
+        text: "He takes a rather forceful view of our problems.",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1413,21 +1438,28 @@ export const questions = [
   },
   {
     questionNum: 49,
-    question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+    question: "If he were here it could be more fun.",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "There was no fun because he was not present",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      {
+        label: "B",
+        text: "He did not show up and so the occasion lacked much fun",
+        correct_answer: false,
+      },
       {
         label: "C",
-        text: "Ethylene",
+        text: "He was being expected to supply more fun",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      {
+        label: "D",
+        text: "He was expected but did not show up to liven up the occasion.",
+        correct_answer: true,
+      },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",
@@ -1442,21 +1474,23 @@ export const questions = [
   },
   {
     questionNum: 50,
+    comprehension:
+      "Fill each gap with the most appropriate option from the list provide",
     question:
-      "Moving from left to right across a period, the general rise in the first ionization energy can be attributed to the",
+      "Without our relentless campaigns, we might … victory in the race for the National Assembly",
     options: [
       {
         label: "A",
-        text: "Sodium hydroxide",
+        text: "never had been",
         correct_answer: false,
       },
-      { label: "B", text: "Hydrochloric acid", correct_answer: true },
+      { label: "B", text: "never have been ", correct_answer: true },
       {
         label: "C",
-        text: "Ethylene",
+        text: "​have never be",
         correct_answer: false,
       },
-      { label: "D", text: "Ammonia", correct_answer: false },
+      { label: "D", text: "be never sure of.", correct_answer: false },
     ],
     yourAnswer: "6 moles of neon",
     correctAnswer: "6 moles of neon",

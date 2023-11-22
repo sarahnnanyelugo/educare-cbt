@@ -4,9 +4,9 @@ import Waec from "../assets/images/waec.png";
 export const exams = [
   {
     num: 1,
-    examYearTypeSubject: "2010 JAMB Chemistry",
+    examYearTypeSubject: "2020 JAMB English",
     examType: Jamb,
-    examDetails: "2010 Chemistry Jamb Practice (2010 Jamb Chemistry)",
+    examDetails: "2020 English Jamb Practice (2010 Jamb English)",
     examDuration: "30 mins",
     questionNum: "50 questions",
     examMarks: "50 marks",

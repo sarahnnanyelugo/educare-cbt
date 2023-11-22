@@ -9,6 +9,9 @@ export const Questions = ({ data, setChecked }) => {
       <div className="title-div">
         {" "}
         <h6>Question {data.questionNum}</h6>
+        <p>
+          <strong>{data.comprehension}</strong>
+        </p>
       </div>
       <div style={{ height: "180px" }}>
         {" "}
