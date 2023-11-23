@@ -39,7 +39,7 @@ export const MyAccount = () => {
         {user !== null && loggedIn === "1" ? <Navbar /> : <EducareNavBar />}
       </div>
 
-      <div className="col-md-10 offset-md-1 mt7">
+      <div className="col-md-10 offset-md-1 mt7 acc-body">
         <Link to={"/"}>
           {" "}
           <img src={Prev} alt="img" width="44px" height="21px" className="" />
@@ -101,7 +101,7 @@ export const MyAccount = () => {
                   </label>
                 </div>{" "}
               </div>
-              <div className="col-md-4 " style={{ paddingLeft: "30px" }}>
+              <div className="col-md-4 lst-input">
                 {" "}
                 <div class="form">
                   <input
