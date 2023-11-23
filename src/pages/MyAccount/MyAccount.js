@@ -147,7 +147,9 @@ export const MyAccount = () => {
                     Change Password
                   </p>
                 </div>
-                <div className={`flexy flexyM offset-md-10 ${newPassword}`}>
+                <div
+                  className={`flexy acc-btns flexyM offset-md-10 ${newPassword}`}
+                >
                   <button className="cancel-btn" onClick={unsetPassword}>
                     Cancel
                   </button>

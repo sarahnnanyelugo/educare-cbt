@@ -8,18 +8,29 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   padding: 20px;
   margin-bottom: 80px;
-  .form-btns {
+  .acc-btns {
     // float: right;
   }
   .save-btn {
-    @include main-btn;
+    background: #2f67d8 !important;
+    color: #fff;
+    border-radius: 100px;
+    margin-right: 10px;
+    // padding: 5px 15px;
+    height: 40px;
+    width: 65px;
+    font-size: 14px;
+    border: solid 1px #2f67d8;
+    font-family: rebondG-Semi-Bold;
   }
   .cancel-btn {
     background: #fff !important;
     color: #2f67d8;
     border-radius: 100px;
     margin-right: 10px;
-    padding: 5px 15px;
+    // padding: 5px 15px;
+    height: 40px;
+    width: 85px;
     font-size: 14px;
     border: solid 1px #2f67d8;
     font-family: rebondG-Semi-Bold;
