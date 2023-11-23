@@ -216,7 +216,12 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-10 offset-md-1 flexy discover">
+      <center className="mt8">
+        <Link to={"/demo-page"}>
+          <button className="demo-btn">See how it works</button>
+        </Link>
+      </center>
+      <div className="col-md-10 offset-md-1 flexy discover mtt">
         <div className="col-md-4 mt8 no-margin">
           <small>For educators</small>
           <h3>Tools that empower teachers and educators</h3>

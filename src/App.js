@@ -17,6 +17,7 @@ import { Home } from "./pages/Home/Home";
 import { LoginPage } from "./pages/LoginPage.js/LoginPage";
 import { AnswerSummary } from "./pages/AnalysisDashboard/AnswerSummary";
 import { MyAccount } from "./pages/MyAccount/MyAccount";
+import { DemoPage } from "./pages/DemoPage/DemoPage";
 function App() {
   return (
     <>
@@ -36,6 +37,7 @@ function App() {
         <Route path="authenticate" element={<AuthenticationPage />} />{" "}
         <Route path="answer-summary" element={<AnswerSummary />} />{" "}
         <Route path="my-account" element={<MyAccount />} />{" "}
+        <Route path="demo-page" element={<DemoPage />} />{" "}
       </Routes>
     </>
   );
