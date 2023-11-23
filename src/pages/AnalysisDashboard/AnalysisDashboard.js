@@ -9,6 +9,7 @@ import { AnswerSummary } from "./AnswerSummary";
 import QuestionChart from "./QuestionChart.js/QuestionChart";
 import SubjectChart from "./SubjectChart/SubjectChart";
 import TimeChart from "./TimeChart/TimeChart";
+import Prev from "../../assets/images/previous.svg";
 export const AnalysisDashboard = () => {
   const [activeIndex2, setActiveIndex2] = useState(1);
   const handleClick = (index) => setActiveIndex2(index);
@@ -28,8 +29,12 @@ export const AnalysisDashboard = () => {
     <>
       <Navbar />
       <div className="col-md-10 offset-md-1 mt5">
-        <Link to={"/test-analysis"}>Back</Link>
-        <h4>Test Analysis</h4>
+        <Link to={"/test-analysis"}>
+          {" "}
+          <img src={Prev} alt="img" width="44px" height="21px" className="" />
+          Back
+        </Link>
+        <h4 className="mt3">Test Analysis</h4>
         <div className="analysis-tab ">
           {" "}
           <div className="tabs ">
