@@ -4,6 +4,7 @@ import EducareNavBar from "../../components/EducareNavBar/EducareNavBar";
 import { Password } from "../../components/Form/Password";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./my-account.scss";
+import Prev from "../../assets/images/previous.svg";
 export const MyAccount = () => {
   const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
   const [loggedIn, setLoggedIn] = useState(sessionStorage.getItem("logged_in"));
@@ -39,8 +40,12 @@ export const MyAccount = () => {
       </div>
 
       <div className="col-md-10 offset-md-1 mt7">
-        <Link to={"/"}>Back</Link>
-        <h3>My Account</h3>
+        <Link to={"/"}>
+          {" "}
+          <img src={Prev} alt="img" width="44px" height="21px" className="" />
+          Back
+        </Link>
+        <h3 className="mt3">My Account</h3>
         <div className="analysis-tab ">
           <div className="tabs ">
             <button
