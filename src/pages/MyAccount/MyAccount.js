@@ -63,99 +63,98 @@ export const MyAccount = () => {
             </button> */}
           </div>
           <div className="panels">
-            <div className={`panel ${checkActive(1, "active2")}`}>
-              <div className="acc-card">
-                <h6>Personal Information</h6>
-                <hr />
-                <form className=" flexy">
-                  <div className="col-md-4">
-                    <div class="form">
-                      <input
-                        type="email"
-                        name="email"
-                        //   onChange={handleChange}
-                      />
-                      <label for="text" class="label-name">
-                        <span class="content-name">Email *</span>
-                      </label>
-                    </div>{" "}
-                    <div class="form">
-                      <input
-                        type="email"
-                        name="email"
-                        //   onChange={handleChange}
-                      />
-                      <label for="text" class="label-name">
-                        <span class="content-name">Email *</span>
-                      </label>
-                    </div>{" "}
-                    <div class="form">
-                      <input
-                        type="email"
-                        name="email"
-                        //   onChange={handleChange}
-                      />
-                      <label for="text" class="label-name">
-                        <span class="content-name">Email *</span>
-                      </label>
-                    </div>{" "}
-                  </div>
-                  <div className="col-md-4 " style={{ paddingLeft: "30px" }}>
-                    {" "}
-                    <div class="form">
-                      <input
-                        type="email"
-                        name="email"
-                        //   onChange={handleChange}
-                      />
-                      <label for="text" class="label-name">
-                        <span class="content-name">Email *</span>
-                      </label>
-                    </div>{" "}
-                  </div>
-                </form>
+            <div className={`panel ${checkActive(1, "active2")}`}></div>
+          </div>
+          <div className="acc-card">
+            <h6>Personal Information</h6>
+            <hr />
+            <form className=" flexy ">
+              <div className="col-md-4">
+                <div className="form">
+                  <input
+                    type="email"
+                    name="email"
+                    //   onChange={handleChange}
+                  />
+                  <label for="text" class="label-name">
+                    <span class="content-name">First Name</span>
+                  </label>
+                </div>{" "}
+                <div class="form">
+                  <input
+                    type="email"
+                    name="email"
+                    //   onChange={handleChange}
+                  />
+                  <label for="text" class="label-name">
+                    <span class="content-name">Date of birth</span>
+                  </label>
+                </div>{" "}
+                <div class="form">
+                  <input
+                    type="email"
+                    name="email"
+                    //   onChange={handleChange}
+                  />
+                  <label for="text" class="label-name">
+                    <span class="content-name">Sex </span>
+                  </label>
+                </div>{" "}
               </div>
-              <div className="acc-card ">
-                <h6>Password</h6>
-                <hr />
-                <div className="flexy">
-                  {" "}
-                  <form className="col-md-4">
-                    {" "}
-                    <Password
-                      placeholder="Password"
-                      name="password"
-                      type="password"
-                      onChange={handleChange}
-                    />
-                    <div className={`${newPassword}`}>
-                      <Password
-                        placeholder="New Password"
-                        name="password"
-                        type="password"
-                        onChange={handleChange}
-                      />
-                      <Password
-                        placeholder="Confirm Password"
-                        name="password"
-                        onChange={handleChange}
-                        type="password"
-                      />
-                    </div>
-                  </form>
-                  <p className="change-password" onClick={changePassword}>
-                    Change Password
-                  </p>
-                </div>
-                <div
-                  className={`flexy acc-btns flexyM offset-md-10 ${newPassword}`}
-                >
-                  <button className="cancel-btn" onClick={unsetPassword}>
-                    Cancel
-                  </button>
-                  <button className="save-btn">Save</button>
-                </div>
+              <div className="col-md-4 " style={{ paddingLeft: "30px" }}>
+                {" "}
+                <div class="form">
+                  <input
+                    type="email"
+                    name="email"
+                    //   onChange={handleChange}
+                  />
+                  <label for="text" class="label-name">
+                    <span class="content-name">Last Name</span>
+                  </label>
+                </div>{" "}
               </div>
+            </form>
+          </div>
+          <div className="acc-card ">
+            <h6>Password</h6>
+            <hr />
+            <div className="flexy">
+              {" "}
+              <form className="col-md-4">
+                {" "}
+                <Password
+                  placeholder="Password"
+                  name="password"
+                  type="password"
+                  onChange={handleChange}
+                />
+                <div className={`${newPassword}`}>
+                  <Password
+                    placeholder="New Password"
+                    name="password"
+                    type="password"
+                    onChange={handleChange}
+                  />
+                  <Password
+                    placeholder="Confirm Password"
+                    name="password"
+                    onChange={handleChange}
+                    type="password"
+                  />
+                </div>
+              </form>
+              <p className="change-password" onClick={changePassword}>
+                Change Password
+              </p>
+            </div>
+            <div
+              className={`flexy acc-btns flexyM offset-md-10 ${newPassword}`}
+            >
+              <button className="cancel-btn" onClick={unsetPassword}>
+                Cancel
+              </button>
+              <button className="save-btn">Save</button>
             </div>
           </div>
         </div>
